@@ -21,7 +21,7 @@ categories: jekyll update
 > ![]({{ site.baseurl }}/res/android-decompile/apktool_path_environment.png)
 
 #### 打开CMD.exe
-> 在任意路径执行以下命令
+> 可在任意路径执行以下命令
 
 * 卸载
 > adb uninstall [package name]
@@ -47,6 +47,9 @@ categories: jekyll update
 
 * 安装
 > adb install [aligned_apk path]
+
+* 继续修改后重新打包
+> 删除apkname/build文件夹
 
 #### 更换apktool版本
 * 需要删除这个文件`C:\Users\Administrator\apktool\framework\1.apk`
