@@ -4,15 +4,15 @@ title:  "Android ProductFlavors"
 date:   2018-01-15 21:03:00 +0800
 categories: jekyll update
 ---
-### Android 产品风味
-* 需求是application module和library module不同市场渠道配置不同的资源
+## Android 产品风味
+* 需求是application module和library module根据不同市场渠道配置不同的资源，包括java，res，AndroidManifest，dependencies，aidlassets，jniLibs
 
-#### 环境
-> [Android Studio][AndroidStudio-Install-Instructions] 版本:2.3
-> [Gradle][Gradle-Install-Instructions] 版本:3.3
+### 环境
+* [Android Studio][AndroidStudio-Install-Instructions] 版本:2.3
+* [Gradle][Gradle-Install-Instructions] 版本:3.3
 
-#### 配置Application Module
-##### 在application module/build.gradle增加
+### 配置Application Module
+#### 在application module/build.gradle增加
 	apply plugin: 'com.android.application'
 
 	android {
@@ -76,12 +76,12 @@ categories: jekyll update
     	...
 	}
 
-#### Library Module配置
-##### 创建library module/libs_chinese
+### 配置Library Module
+#### 创建library module/libs_chinese
 
-##### 创建library module/libs_global
+#### 创建library module/libs_global
 
-##### 在library module/build.gradle增加
+#### 在library module/build.gradle增加
 	apply plugin: 'com.android.library'
 	import java.util.regex.Matcher
 	import java.util.regex.Pattern
@@ -137,12 +137,13 @@ categories: jekyll update
     	def buildLibs() {
 		    String currentFlavor = getCurrentFlavor()
 		    println("current Flavor:" + currentFlavor)
-		    boolean isChinese = "chinese".equalsIgnoreCase(currentFlavor)
-		    println("is Chinese Flavor:" + isChinese)
-		    if (isChinese) {
+		    if ("chinese".equalsIgnoreCase(currentFlavor)) {
 		        return 'libs_chinese'
+		    } else if ("global".equalsIgnoreCase(currentFlavor)) {
+		        return 'libs_global'
+		    } else {
+		        return 'libs'
 		    }
-		    return 'libs'
 		}
 		...
 		def getCurrentFlavor() {
@@ -159,9 +160,14 @@ categories: jekyll update
 		        return "";
 		    }
 		}
+		...
+		dependencies {
+			// 修改依赖
+    		compile fileTree(include: ['*.jar'], dir: buildLibs())
+		}
 	}
 
-#### 参考文章
+### 参考文章
 * [官方文档][build-variants-instructions]
 * [Product Flavors for Android Library](https://android.jlelse.eu/product-flavors-for-android-library-d3b2d240fca2)
 * [Android Studio多渠道打包](https://www.ezlippi.com/blog/2015/03/android-studio-prefrence.html)
