@@ -68,11 +68,17 @@ categories: jekyll update
     	configurations {
     		chineseDebugCompile
     		globalDebugCompile
+    		chineseReleaseCompile
+    		globalReleaseCompile
 		}
 		...
+		dependencies {
 		// 依赖不同的library
 		chineseDebugCompile project(path: ':sdk', configuration: 'chineseDebug')
     	globalDebugCompile project(path: ':sdk', configuration: 'globalDebug')
+    	chineseReleaseCompile project(path: ':sdk', configuration: 'chineseRelease')
+    	globalReleaseCompile project(path: ':sdk', configuration: 'globalRelease')
+    	}
     	...
 	}
 
@@ -161,11 +167,20 @@ categories: jekyll update
 		    }
 		}
 		...
+    	configurations {
+    		chineseDebugCompile
+    		globalDebugCompile
+    		chineseReleaseCompile
+    		globalReleaseCompile
+		}
+		...
 		dependencies {
 			// 修改依赖
     		compile fileTree(include: ['*.jar'], dir: buildLibs())
 		}
 	}
+
+#### 因为IDE无法解析libs_chinese和libs_global，所以会提示错误，但在编译阶段是可以通过的
 
 ### 参考文章
 * [官方文档][build-variants-instructions]
