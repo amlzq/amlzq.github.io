@@ -13,6 +13,7 @@ categories: jekyll update
 
 ### 配置Application Module
 #### 在application module/build.gradle增加
+```
 	apply plugin: 'com.android.application'
 
 	android {
@@ -81,13 +82,14 @@ categories: jekyll update
     	}
     	...
 	}
-
+```
 ### 配置Library Module
 #### 创建library module/libs_chinese
 
 #### 创建library module/libs_global
 
 #### 在library module/build.gradle增加
+```
 	apply plugin: 'com.android.library'
 	import java.util.regex.Matcher
 	import java.util.regex.Pattern
@@ -179,7 +181,7 @@ categories: jekyll update
     		compile fileTree(include: ['*.jar'], dir: buildLibs())
 		}
 	}
-
+```
 #### 因为IDE无法解析libs_chinese和libs_global，所以会提示错误，但在编译阶段是可以通过的
 
 ### 参考文章
