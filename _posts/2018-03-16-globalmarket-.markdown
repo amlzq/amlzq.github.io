@@ -4,19 +4,52 @@ title:  "Android ProductFlavors"
 date:   2018-03-16 21:03:00 +0800
 categories: jekyll update
 ---
-## 海外游戏系列-选择合适的第三方数据统计
-* 需求是application module和library module根据不同市场渠道配置不同的资源，包括java，res，AndroidManifest，dependencies，aidlassets，jniLibs
+## 海外游戏系列-选择合适的第三方推广数据统计
+> 在海外市场，你可能会在投放这些广告
+```
+Facebook Mobile Ads
+Google Adwords
+Twitter Ads
+```
+那么就需要第三方监测后台，可选项有[adjust][adjust]，[appsflyer][appsflyer]，[kochava][kochava]。下面是比对这三家的优缺点。
+---
+#### 介绍[adjust][adjust]
+###### 服务功能
+* 管理帐户，事件追踪，跟踪链接生成，跟踪第三方商店和预安装推广，使用回调，Facebook移动测量，用adjust跟踪再营销活动，受众分群工具，特殊伙伴，GOOGLE ADWORDS跟踪，TWITTER移动测量指南，同期群分析，KPI服务，深度链接，展示跟踪，防作弊套件，收入验证，SDK签名。
 
-### 
-* [Android Studio][AndroidStudio-Install-Instructions] 版本:2.3
-* [Gradle][Gradle-Install-Instructions] 版本:3.3
+###### 收费标准
 
+###### 权限管理
+
+###### 支持的广告平台
+* 覆盖所有主流广告平台
+
+###### 支持的移动应用平台
+* AppStore
+* Google Play
+* Amazon Appstore
+* Windows Phone
+* Windows Store
+
+###### 数据粒度
+* 可交付
+> 展示，点击，安装，点击转化率，被拒安装，被拒安装率，RI API，RI TME，RI DO，RI CI，再归因，被拒再归因，被拒再归因率，RR API，RR TME，平均日活跃用户，平均周活跃用户，平均月活跃用户。
+* 防作弊设置
+* 成本
+> 点击付费，eCPC，安装付费，eCPI，成本，收入，ROI。
+* 同期群分析
+* 支持添加事件
+
+###### 及时性
+* 
+
+---
+#### 比对[adjust][adjust] 和 [appsflyer][appsflyer]
+* 
+---
 ### 参考文章
-* [官方文档][build-variants-instructions]
 * [市场常用的3家第三方跟踪渠道大对比](http://www.baijingapp.com/article/2649)
-* [Android Studio多渠道打包](https://www.ezlippi.com/blog/2015/03/android-studio-prefrence.html)
-* [Android studio gradle中分渠道加载res、libraries及Class](https://www.jianshu.com/p/d7d51a1363cd)
-* [Android Studio Gradle实践之多渠道自动化打包+版本号管理](https://unclechen.github.io/2015/10/22/Android%20Studio%20Gradle%E5%AE%9E%E8%B7%B5%E4%B9%8B%E5%A4%9A%E6%B8%A0%E9%81%93%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85+%E7%89%88%E6%9C%AC%E5%8F%B7%E7%AE%A1%E7%90%86/)
+* [adjust/appsflyer这两家移动广告第三方监测工具哪家好用](https://www.zhihu.com/question/31844708)
 
 [adjust]: https://www.adjust.com/
 [adjust_android]: https://docs.adjust.com/zh/sdk/android/
