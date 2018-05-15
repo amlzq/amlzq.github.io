@@ -1,5 +1,8 @@
 # amlzq.github.io
-* README
+* 
+
+## _drafts
+* 草稿
 
 ## 使用Jekyll构建博客
 
