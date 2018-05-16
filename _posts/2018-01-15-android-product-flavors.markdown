@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Android ProductFlavors"
+title:  "Android 产品风味"
 date:   2018-01-15 21:03:00 +0800
 categories: jekyll update
 ---
-## Android 产品风味
-* 需求是application module和library module根据不同市场渠道配置不同的资源，包括java，res，AndroidManifest，dependencies，aidlassets，jniLibs
+
+* 需求是application module和library <br>module根据不同市场渠道配置不同的资源，包括java，res，AndroidManifest，dependencies，aidlassets，jniLibs
 
 ### 环境
 * [Android Studio][AndroidStudio-Install-Instructions] 版本:2.3

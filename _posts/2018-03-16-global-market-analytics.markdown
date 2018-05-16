@@ -1,11 +1,10 @@
 ---
 layout: post
-title:  "Android ProductFlavors"
+title:  "Android 游戏海外系列-选择数据统计平台"
 date:   2018-03-16 22:03:00 +0800
 categories: jekyll update
 ---
-## 海外游戏系列-选择合适的第三方推广数据统计
-> 在海外市场，你可能会在投放这些广告
+### 在海外市场，你可能会在投放这些广告
 ```
 Facebook Mobile Ads
 Google Adwords
