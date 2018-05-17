@@ -77,8 +77,6 @@ xmlstrings       Print the strings of the given compiled xml assets.
 >aapt a[dd]：向压缩包中添加指定文件
 >aapt v[ersion]:打印aapt的版本
 
-
-
 bash clearAppData.sh com.droidyue.akoi
 
 ## 创建证书
