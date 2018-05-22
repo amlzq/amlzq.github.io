@@ -8,7 +8,6 @@ categories: jekyll update
 * 首先登入[Facebook for Developers后台][facebook_developers]
 * 在[Facebook for Developers后台][facebook_developers]添加新应用
 > ![]({{ site.baseurl }}/assets/facebook_sdk/add_app.png)
-> ![]({{ site.baseurl }}/assets/facebook_sdk/add_app.png)
 
 ### 第二步设置新应用
 > ![]({{ site.baseurl }}/assets/facebook_sdk/set_app.png)
