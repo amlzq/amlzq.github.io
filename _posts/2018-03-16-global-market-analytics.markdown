@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Android 游戏海外系列-选择数据统计平台"
+title:  "Android海外系列-选择数据统计平台"
 date:   2018-03-16 22:03:00 +0800
 categories: jekyll update
 ---
@@ -30,17 +30,6 @@ Twitter Ads
 * Windows Phone
 * Windows Store
 
-###### 数据粒度
-* 可交付
-> 展示，点击，安装，点击转化率，被拒安装，被拒安装率，RI API，RI TME，RI DO，RI CI，再归因，被拒再归因，被拒再归因率，RR API，RR TME，平均日活跃用户，平均周活跃用户，平均月活跃用户。
-* 防作弊设置
-* 成本
-> 点击付费，eCPC，安装付费，eCPI，成本，收入，ROI。
-* 同期群分析
-* 支持添加事件
-
-###### 及时性
-* 
 
 ---
 #### 比对[adjust][adjust] 和 [appsflyer][appsflyer]

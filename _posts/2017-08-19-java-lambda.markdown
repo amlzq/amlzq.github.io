@@ -1,4 +1,9 @@
-
+---
+layout: post
+title:  "Java Lambda使用简介"
+date:   2017-08-19 12:00 +0800
+categories: jekyll update
+---
 ### 基本形式
 ```
 Lambda表达式无论怎么变化，都有一个基本的形式：
@@ -28,6 +33,7 @@ param -> {exp1;exp2;}(表达式可以是return语句)
 view -> Log.i("tag","hello lambda")
   这里的view属于参数，Log.i("tag","hello lambda")属于表达式，其中参数属于单一参数，表达式属于单行表达式，所以省略了()和{}这两个括号。
 ```
+---
 
 ### 参考文章
-* [Android中的Lambda表达式详解](https://maxwell-nc.github.io/android/retrolambda.html#Hello_Lambda%EF%BC%88IDE%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2%EF%BC%89)
+* [Android中的Lambda表达式详解](https://maxwell-nc.github.io/android/etrolambda.html#Hello_Lambda%EF%BC%88IDE%E8%87%AA%E5%8A%A8%E8%BD%AC%E6%8D%A2%EF%BC%89)
