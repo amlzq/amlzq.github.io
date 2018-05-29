@@ -121,3 +121,11 @@ categories: jekyll update
 ### AS项目结构
 项目含一个app src目录，4个测试目录，
 分别是androidTest（UI层测试）、androidTestMock（UI层测试mock数据支持）、test（业务层单元测试）、mock（业务层单元测试mock数据支持）。src目录的代码组织方式完全是按照功能来组织的，功能内部分为xactivity、xcontract、xfragment、xpresenter四个类文件(x代表业务名称)。
+
+### android-support-business
+* 采用分支管理
+* android-support-payment
+* android-support-push
+* android-support-share
+* android-support-maps
+* android-support-analytis
