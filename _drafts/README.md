@@ -129,3 +129,18 @@ categories: jekyll update
 * android-support-share
 * android-support-maps
 * android-support-analytis
+
+### 泡椒网游戏SDK
+* [Jianbo Peng](https://github.com/pengjianbo?tab=repositories)
+> 
+
+### 融合渠道SDK的技术分析
+* [huanleyouren](https://github.com/huanleyouren)
+* [QuickSDKTool_Win_P34](https://github.com/huanleyouren/QuickSDKTool_Win_P34)
+
+### 悬浮视图
+* [泡椒网游戏SDK Float View(悬浮窗)](https://github.com/pengjianbo/FloatViewFinal)
+
+
+### CMDB
+* [open-cmdb/cmdb](https://github.com/open-cmdb/cmdb)
