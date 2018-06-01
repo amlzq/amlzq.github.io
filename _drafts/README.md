@@ -52,11 +52,6 @@ categories: jekyll update
 
 ### gms-play-services
 
-
-
-
-
-
 ### facebook-sdk
 
 #### 
@@ -79,9 +74,6 @@ categories: jekyll update
 
 
 ### Android技术调研-定位服务
-
-
-### Android技术调研-多线程下载
 
 
 ### 2018-05-11-Android DragLayout
