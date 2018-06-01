@@ -16,8 +16,8 @@ categories: jekyll update
 ---
 [文字说明]: 链接
 ```
----
 
+---
 ## 需要理解的
 
 ### Java JDK的jre和Android Studio的jre区分和联系
@@ -137,6 +137,7 @@ categories: jekyll update
 ### 融合渠道SDK的技术分析
 * [huanleyouren](https://github.com/huanleyouren)
 * [QuickSDKTool_Win_P34](https://github.com/huanleyouren/QuickSDKTool_Win_P34)
+* Fusion Game sdk 聚合游戏sdk
 
 ### 悬浮视图
 * [泡椒网游戏SDK Float View(悬浮窗)](https://github.com/pengjianbo/FloatViewFinal)
@@ -144,3 +145,186 @@ categories: jekyll update
 
 ### CMDB
 * [open-cmdb/cmdb](https://github.com/open-cmdb/cmdb)
+
+### 构建模板android项目仓库
+* 必要的类
+```
+GlobalApplication
+Config
+```
+```
+@Override
+protected void onDestroy() {
+    super.onDestroy();
+    handler.removeCallbacksAndMessages(null);
+}
+```
+
+### 解决警告方法
+```
+@SuppressWarnings(value = {"unused", "unchecked", "deprecation"})
+```
+
+### 热更新
+dex分包方案
+
+
+### Logcat
+```
+logcat 错误 tag
+E/AndroidRuntime: FATAL EXCEPTION: main
+```
+
+### 服务端返回的数据格式
+```
+1. data:[]
+列表数据为空有两种情况
+```
+
+
+### android-practice 增加内容
+* 底部导航条
+```
+现在大部分App底部都有一个菜单，实现这个功能也有好多办法：
+
+TabHost+Fragment
+RadioGroup+Fragment
+FragmentTabHost+Fragment
+5.0以后有个新控件，BottomNavigator
+这篇主要介绍下FragmentTabHost配合Fragment使用
+
+作者：Greathfs
+链接：http://www.jianshu.com/p/4d4a83945193
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
+
+### android 属性动画
+```
+// 规则页面实现优化
+如果你的dialog是像上图一样上部透明，下部规整的样式，你可以考虑用layer-list和inset来实现：
+
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetBottom="16dp"
+    android:insetLeft="26dp"
+    android:insetRight="26dp"
+    android:insetTop="16dp"
+    >
+
+    <layer-list>
+        <item>
+            <color android:color="#00E4007F" />  // 透明区域
+        </item>
+
+        <item android:top="80dp">
+            <shape android:shape="rectangle">
+                <corners android:radius="10dp" />
+                <solid android:color="#d19a70" />
+            </shape>
+        </item>
+    </layer-list>
+</inset>
+
+作者：天之界线2010
+链接：http://www.jianshu.com/p/526fcf3e8db3
+來源：简书
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
+```
+
+# 使用
+* Eclipse
+``` xmlns:app="http://schemas.android.com/apk/res/com.yxkj.mgame"```
+* AndroidStudio
+```xmlns:app="http://schemas.android.com/apk/res-auto"```
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 按下状态：(01) true表示按下，例如，Button被按下； (02) false表示非按下。 -->
+    <item android:state_pressed="true/false" android:drawable="@drawable/exam01" />
+
+    <!-- 聚焦状态：(01) true表示获取焦点； (02) false表示非获取焦点。 -->
+    <item android:state_focused="true/false" android:drawable="@drawable/exam01" />
+
+    <!-- 选中状态：(01) true表示选中，例如，Tab被选中； (02) false表示非选中。 -->
+    <item android:state_selected="true/false" android:drawable="@drawable/exam01" />
+
+    <!-- 可勾选状态：(01) true表示可勾选； (02) false表示不可勾选。 -->
+    <item android:state_checkable="true/false" android:drawable="@drawable/exam01" />
+
+    <!-- 选中状态：(01) true表示选中，例如，checkbox被选中； (02) false表示非选中。 -->
+    <item android:state_checked="true/false" android:drawable="@drawable/exam01" />
+
+    <!-- 使能状态：(01) true表示可用； (02) false表示不可用。 -->
+    <item android:state_enabled="true/false" android:drawable="@drawable/exam01" />
+
+    <!-- 焦点状态：(01) true表示获取焦点； (02) false表示可获取焦点。 -->
+    <item android:state_window_focused="true/false" android:drawable="@drawable/exam01" />
+
+</selector>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape=["rectangle" | "oval" | "line" | "ring"] >   --- 默认为rectangle
+    android:innerRadius="dimension"  -- ring专用，内圆环的半径大小。设置innerRadius时，会忽略innerRadiusRatio
+    android:innerRadiusRatio="float" -- ring专用，内圆环的半径比例。例如，比例为10表示"内圆环的半径大小=圆环宽度/10"
+    android:thickness="dimension"    -- ring专用，内圆环的厚度大小。设置thickness时，会忽略thicknessRatio
+    android:thicknessRatio="float"   -- ring专用，内圆环的厚度比例。例如，比例为10表示"内圆环的厚度大小=圆环宽度/10"
+    android:useLevel="true|false"  -- true表示将该形状当作LevelListDrawable
+    <size    -- 大小
+        android:width="dimension"
+        android:height="dimension" />
+    <gradient  -- 渐变
+        android:type=["linear" | "radial" | "sweep"] -- 渐变类型：线性，径向，扫描
+        android:angle="float"   
+        android:startColor="color"
+        android:centerColor="color"  -- 中心点颜色
+        android:endColor="color"
+        android:centerX="float|fraction"  -- 中心点X坐标
+        android:centerY="float|fraction"  -- 中心点Y坐标
+        android:gradientRadius="float|fraction" -- 径向渐变的半径
+        android:useLevel=["true" | "false"] />
+    <corners  -- shape=“rectangle”时使用， 
+        android:radius="dimension"  -- 四个角的半径
+        android:topLeftRadius="dimension"
+        android:topRightRadius="dimension"
+        android:bottomLeftRadius="dimension"
+        android:bottomRightRadius="dimension" />
+    <padding  -- 内容与边框的距离
+        android:left="dimension"
+        android:top="dimension"
+        android:right="dimension"
+        android:bottom="dimension" />
+    <solid    -- 填充颜色
+        android:color="color" />
+    <stroke    -- 指定边框
+        android:width="dimension"
+        android:color="color"
+        android:dashWidth="dimension"    -- 虚线宽度
+        android:dashGap="dimension" />    -- 虚线间隔宽度
+</shape>
+
+# InputLayout自动获取焦点弹出软键盘
+* step1 设置android:focusable="true" 和 android:focusableInTouchMode="true"
+* step2 activity 设置 android:windowSoftInputMode="stateVisible|adjustResize"
+* [Android InputMethodManager输入法简介](http://www.cnblogs.com/weixing/p/3300908.html)
+```
+
+### android 遇到问题已经解决的方案
+```
+# 如何在Activity/Fragment结束时处理异步回调？
+* [1.0](http://iluhcm.com/2017/03/05/handle-asynchronous-callbacks-when-activity-finishes/)
+* [1.1](https://easytoforget.github.io/2017/07/25/handle-callback-while-activity-or-fragment-finished/)
+* [1.2](https://github.com/EasyToForget/LifefulDemo)
+* [1.2](https://github.com/EasyToForget/LifefulDemo)
+
+# Android Fragment 的使用，一些你不可不知的注意事项
+* [1.0](http://yifeng.studio/2016/12/15/android-fragment-attentions/)
+
+# 如何在回调时判断Activity，Fragment，ImageView等等是否已经被关闭
+* [1.0](http://note.tyz.ren/blog/post/zerozhiqin/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%9B%9E%E8%B0%83%E6%97%B6%E5%88%A4%E6%96%ADActivity%EF%BC%8CFragment%EF%BC%8CImageView%E7%AD%89%E7%AD%89%E6%98%AF%E5%90%A6%E5%B7%B2%E7%BB%8F%E8%A2%AB%E5%85%B3%E9%97%AD)
+```

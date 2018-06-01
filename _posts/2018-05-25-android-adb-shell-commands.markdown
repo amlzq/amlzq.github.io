@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Android ADB命令"
+title:  "Android调试桥命令"
 date:   2018-05-25 18:00 +0800
 categories: jekyll update
 ---
@@ -69,6 +69,7 @@ adb shell stop	关闭日志
 ---
 
 # 参考文章
+* [官方文档](https://developer.android.com/studio/command-line/adb)
 * debug路径: C:/Users/%USERPROFILE%/.android/debug.keystore
 * [Authenticating Your Client][Authenticating_Your_Client]
 

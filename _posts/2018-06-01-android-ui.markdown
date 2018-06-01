@@ -1,0 +1,97 @@
+---
+layout: post
+title:  "AndroidUI设计规范"
+date:   2018-06-01 00:00 +0800
+categories: jekyll update
+---
+### 正文
+
+* 表格
+| 密度 | 密度值 | 分辨率 |
+| --- | --- | --- |
+| ldpi | 120 | 240*320 |
+| mdpi | 160 | 320*480 |
+| hdpi | 240 | 480*800 |
+| xhdpi | 320 | 720*1280 |
+| xxhdpi | 480 | 1080*1920 |
+| xxxhdpi | 960 | 1440*2560 |
+
+* 透明度
+| 透明度 | 16进制表示 |
+| --- | --- |
+| 100% | 00 |
+| 95% | 0D |
+| 90% | 1A |
+| 85% | 26 |
+| 80% | 33 |
+| 75% | 40 |
+| 70% | 4D |
+| 65% | 59 |
+| 60% | 66 |
+| 55% | 73 |
+| 50% | 80 |
+| 45% | 8C |
+| 40% | 99 |
+| 35% | A6 |
+| 30% | B3 |
+| 25% | BF |
+| 20% | CC |
+| 15% | D9 |
+| 10% | E6 |
+| 5% | F2 |
+| 0% | FF |
+
+
+# APP UI设计规范
+* 本文使用[Markdown](http://wowubuntu.com/markdown/)编写
+* 请使用浏览器阅读`APP_UI设计规范.html`
+
+## Android UI
+
+### 参考网站
+* [Material Design](http://design.1sters.com/material_design/material-design/introduction.html)
+* [APP设计规范](http://www.jianshu.com/p/a2a4c18c1900)
+* [移动端UI设计规范-第一谈Android系统](http://www.zcool.com.cn/work/ZMTkxOTM3NzY=.html)
+* [Android手机UI界面设计常用规范](http://www.zcool.com.cn/work/ZMTI0MTc3NDg=.html)
+* IOS和Android规范，UI看什么？系列
+* [IOS和Android规范，UI看什么？（一）](http://old.zcool.com.cn/article/ZNDk2NTQw.html)
+* [IOS和Android规范，UI看什么？（二）](http://old.zcool.com.cn/article/ZNDk4NDQ4.html)
+* [IOS和Android规范，UI看什么？（三）](http://old.zcool.com.cn/article/ZNDk5Mjcy.html)
+
+### Android
+* 设计时，用1080*1920的设计稿进行设计
+* 切图时，切xhdpi，xxhdpi的图标，图片为PNG格式，xxhdpi的banner等位图，大幅的背景图出jpg格式。
+* 标注时，距离用dp，字号用sp
+
+## iOS UI
+
+### 参考网站
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+* []()
+
+要求：
+	1.按主流的 1280*720 分辨率设计
+
+	2.按钮交互状态
+
+	3.出图格式：
+		图标 .png
+		大的背景 .jpg
+		九宫图	.9.png
+		纯色图	不用出图，程序实现
+
+	4.效果图请标注
+		颜色可以省略不标
+		尺寸一定要标注（字体大小和间距）
+				
+---
+### 参考文章
+* [文字说明][文字说明]
+---
+[规范]: http://www.zcool.com.cn/work/ZMTI0MTc3NDg=.html
