@@ -328,3 +328,21 @@ FragmentTabHost+Fragment
 # 如何在回调时判断Activity，Fragment，ImageView等等是否已经被关闭
 * [1.0](http://note.tyz.ren/blog/post/zerozhiqin/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%9B%9E%E8%B0%83%E6%97%B6%E5%88%A4%E6%96%ADActivity%EF%BC%8CFragment%EF%BC%8CImageView%E7%AD%89%E7%AD%89%E6%98%AF%E5%90%A6%E5%B7%B2%E7%BB%8F%E8%A2%AB%E5%85%B3%E9%97%AD)
 ```
+
+### AndroidTeamplate
+* 开发Android应用样板工程
+* 开速快发，快速搭建框架
+* jar,so,res较多的第三方类库使用module管理
+* core核心包里面放android-support-base代码
+* 开发规范
+```
+* Activity命名规范：XxxActivity
+* 布局文件命名规范：将Activity名称的单词顺序颠倒过来并全部转换为小写字母，然后在单词间加下划线：activity_xxx
+* 对于xml文件中的尺寸和文字显示采取引用的方式：@dimen/xxx、@string/xxx
+* 成员变量名称采用m前缀，是Android编程应遵循的命名规范：private Button mButton
+* Android应用属于典型的事件驱动类型。
+* 采用匿名内部类实现监听的好处：1，可以在同一处实现监听方法，代码更清晰可读 2，更加符合面向对象的编程思想
+* 应用程序设计上：应用展现层与逻辑层尽量分开
+```
+
+### 
