@@ -7,6 +7,7 @@ categories: jekyll update
 
 ### 常见的词
 | English | Chinese |
+| ---------------- | ---------------- |
 | wrapper | 包装 |
 | compat | 兼容 |
 | summary | 概要 |
@@ -15,6 +16,7 @@ categories: jekyll update
 
 ### 常见的短语
 | English | Chinese |
+| ---------------- | ---------------- |
 | Check your inbox to verify your email | 检查您的收件箱以验证您的电子邮件 |
 
 ### 常见缩写的全拼
@@ -35,12 +37,11 @@ Pascal case（译注：首字母大写的命名规范）
 
 ### 常见的 applicationId
 | appName | applicationId |
-| ------ | ------- |
+| ---------------- | ---------------- |
 | googlePlay | com.android.vending |
 | 微信 | com.tencent.mm |
 | QQ | com.tencent.mobileqq |
 | FlashPlayer | com.adobe.flashplayer |
----
 
 ### 常见的渠道
 ```

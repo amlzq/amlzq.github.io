@@ -25,8 +25,16 @@ categories: jekyll update
 * I:\Android\android-studio-ide-171.4443003-windows\android-studio\jre
 
 ### Android多线程下载
+* [Android多线程断点续传下载](https://www.jianshu.com/p/2b82db0a5181)
+> Demo
+
 * https://github.com/AigeStudio/MultiThreadDownloader
+
 * https://github.com/Jerrywen/MultiThreadDownloader
+
+* [MultiThreadDownloader下载库的使用详解](https://www.jianshu.com/p/af5c57ef3d8f)
+> Demo https://github.com/Aspsine/MultiThreadDownload
+> 靠谱
 
 ### Android定位服务
 * [安卓定位及坐标转换](https://www.jianshu.com/p/ddc6141bac95)
