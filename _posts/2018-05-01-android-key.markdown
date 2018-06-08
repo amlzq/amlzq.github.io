@@ -6,18 +6,18 @@ categories: jekyll update
 ---
 
 ### 常见的词
-| English | Chinese |
-| -------------- | -------------- |
-| wrapper | 包装 |
-| compat | 兼容 |
-| summary | 概要 |
-| natives | 原生 |
-| featured | 精选 |
+| English | Chinese | 
+| -------------- | -------------- | 
+| wrapper | 包装 | 
+| compat | 兼容 | 
+| summary | 概要 | 
+| natives | 原生 | 
+| featured | 精选 | 
 
 ### 常见的短语
-| English | Chinese |
-| -------------- | -------------- |
-| Check your inbox to verify your email | 检查您的收件箱以验证您的电子邮件 |
+| English | Chinese | 
+| -------------- | -------------- | 
+| Check your inbox to verify your email | 检查您的收件箱以验证您的电子邮件 | 
 
 ### 常见缩写的全拼
 * Java Bean
@@ -35,7 +35,7 @@ Plain Ordinary Java Object / Pure Old Java Object
 Pascal case（译注：首字母大写的命名规范）
 ```
 
-### 常见的 applicationId
+* 常见的 applicationId
 | appName | applicationId |
 | -------------- | -------------- |
 | googlePlay | com.android.vending |
@@ -84,6 +84,16 @@ amazon {} // 亚马逊
  * Changes: (from ${DATE})
  * Description: 
  */
+```
+* 自定义发布时检查
+```
+/**
+ * @releaseCheck
+ */
+```
+* 屏蔽警告提示
+```
+@SuppressWarnings(value = {"unused", "unchecked", "deprecation"})
 ```
 
 ### android webkit useragent

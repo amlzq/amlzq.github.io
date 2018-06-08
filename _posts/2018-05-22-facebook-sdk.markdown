@@ -42,6 +42,8 @@ keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PAT
 > ![]({{ site.baseurl }}/assets/facebook_sdk/start_status.png)
 ---
 
+### [向您的应用或网站添加 Facebook 登录功能](https://developers.facebook.com/docs/facebook-login)
+
 # 参考文章
 * [官方文档][facebook_developers_docs]
 

@@ -141,7 +141,7 @@ categories: jekyll update
 
 ### 悬浮视图
 * [泡椒网游戏SDK Float View(悬浮窗)](https://github.com/pengjianbo/FloatViewFinal)
-
+* https://github.com/zhaozepeng/FloatWindowPermission
 
 ### CMDB
 * [open-cmdb/cmdb](https://github.com/open-cmdb/cmdb)
@@ -158,11 +158,6 @@ protected void onDestroy() {
     super.onDestroy();
     handler.removeCallbacksAndMessages(null);
 }
-```
-
-### 解决警告方法
-```
-@SuppressWarnings(value = {"unused", "unchecked", "deprecation"})
 ```
 
 ### 热更新
@@ -345,4 +340,34 @@ FragmentTabHost+Fragment
 * 应用程序设计上：应用展现层与逻辑层尽量分开
 ```
 
-### 
+### android-support-base需求
+
+#### utils
+* [获取Manifest中<meta-data>元素的值](http://blog.csdn.net/zhanghao_hulk/article/details/8662917)
+* [android-RuntimePermissions](https://github.com/googlesamples/android-RuntimePermissions)
+
+#### net
+* https://blog.csdn.net/hanqunfeng/article/details/4510338
+```
+jdk1.4换成这个,连接超时
+System.setProperty("sun.NET.client.defaultConnectTimeout", "10000");
+jdk1.4换成这个,读操作超时
+System.setProperty("sun.net.client.defaultReadTimeout", "5000");
+```
+
+#### 打包发布
+* [把Android library上传到jCenter和Maven Central](https://www.jianshu.com/p/0d0598b21bb8)
+* [Android Studio 中使用Gradle发布项目到JCenter仓库](https://www.jianshu.com/p/eb5ce8163a9b)
+* [5分钟发布 Android Library 项目到 JCenter](https://github.com/panpf/android-library-publish-to-jcenter)
+
+* 最新
+| groupId | artifactId | version |
+| -------------- | -------------- | -------------- |
+|  |
+
+### AndroidTools需求
+* [专访黑域](https://sspai.com/post/37950)
+
+### AndroidWebView与JS交互
+* https://yifeng.studio/2016/12/01/android-webview-java-js-interaction/
+* https://75team.com/post/android-webview-and-js.html

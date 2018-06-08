@@ -16,8 +16,8 @@ categories: jekyll update
 | xxhdpi | 480 | 1080*1920 |
 | xxxhdpi | 960 | 1440*2560 |
 
-* 透明度
-| 透明度 | 16进制表示 |
+* ARGB 中的透明度alpha，表示的是不透明度。
+| 不透明度 | 16进制表示 |
 | --- | --- |
 | 100% | 00 |
 | 95% | 0D |
@@ -40,7 +40,7 @@ categories: jekyll update
 | 10% | E6 |
 | 5% | F2 |
 | 0% | FF |
-
+* [Android 颜色透明度换算](http://www.snowdream.tech/2016/03/11/android-color-argb-alpha-convert/)
 
 # APP UI设计规范
 * 本文使用[Markdown](http://wowubuntu.com/markdown/)编写
@@ -75,6 +75,7 @@ categories: jekyll update
 * []()
 * []()
 
+```
 要求：
 	1.按主流的 1280*720 分辨率设计
 
@@ -89,9 +90,13 @@ categories: jekyll update
 	4.效果图请标注
 		颜色可以省略不标
 		尺寸一定要标注（字体大小和间距）
-				
----
+```
+
 ### 参考文章
 * [文字说明][文字说明]
----
+
+
 [规范]: http://www.zcool.com.cn/work/ZMTI0MTc3NDg=.html
+[iOS和安卓APP启动图标的尺寸和圆角大小详解]: https://www.25xt.com/iconweb/11704.html
+[APP图标尺寸]: https://www.jianshu.com/p/d6be2dc801e9
+[App常用图标尺寸规范汇总]: https://likfe.com/2016/07/26/android-size-set/

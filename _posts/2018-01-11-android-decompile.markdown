@@ -64,5 +64,5 @@ jarsigner -digestalg SHA1 -sigalg MD5withRSA -verbose -keystore [keystore path] 
 [JDK-Install-Instructions]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [AndroidSDK-Install-Instructions]: https://developer.android.com/index.html
 [Apktool-Install-Instructions]: https://ibotpeaches.github.io/Apktool/install/
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+
+[Apktool]: https://ibotpeaches.github.io/Apktool/
