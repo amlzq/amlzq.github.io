@@ -65,4 +65,5 @@ Error:All flavors must now belong to a named flavor dimension. Learn more at htt
 > 
 
 ### 参考文章
+* [迁移到 Android Plugin for Gradle 3.0.0](https://developer.android.com/studio/build/gradle-plugin-3-0-0-migration)
 * [个人总结：AS升级到3.0后遇到的问题及解决方法](https://www.jianshu.com/p/02a62574d9a1)

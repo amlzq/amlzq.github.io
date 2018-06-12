@@ -46,7 +46,7 @@ jarsigner -digestalg SHA1 -sigalg MD5withRSA -verbose -keystore [keystore path] 
 ```
 
 * 对齐
-> zipalign 4 [signed_apk path] [aligned_apk path]
+> zipalign -v 4 [signed_apk path] [aligned_apk path]
 
 * 安装
 > adb install [aligned_apk path]
@@ -59,7 +59,9 @@ jarsigner -digestalg SHA1 -sigalg MD5withRSA -verbose -keystore [keystore path] 
 
 ## 参考文章
 * [Android开发中常用的命令总结](https://www.jianshu.com/p/58a23804da71)
+* [签署您的应用](https://developer.android.com/studio/publish/app-signing#generate-key)
 * [获取Android SHA1 、生成jks密钥、签名Apk](https://www.jianshu.com/p/692ca2bcbac5)
+
 
 [JDK-Install-Instructions]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [AndroidSDK-Install-Instructions]: https://developer.android.com/index.html

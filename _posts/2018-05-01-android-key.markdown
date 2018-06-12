@@ -88,7 +88,7 @@ amazon {} // 亚马逊
 * 自定义发布时检查
 ```
 /**
- * @releaseCheck
+ * @publishCheck
  */
 ```
 * 屏蔽警告提示
