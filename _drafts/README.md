@@ -371,3 +371,9 @@ System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 ### AndroidWebView与JS交互
 * https://yifeng.studio/2016/12/01/android-webview-java-js-interaction/
 * https://75team.com/post/android-webview-and-js.html
+
+
+### 系统分享功能
+https://www.jianshu.com/p/88f166dd43b7
+https://blog.csdn.net/zh_ang_lei/article/details/52385678
+https://github.com/baishixian/Share2
