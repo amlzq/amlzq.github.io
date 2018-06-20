@@ -44,7 +44,7 @@ Pascal case（译注：首字母大写的命名规范）
 | FlashPlayer | com.adobe.flashplayer |
 
 ---
-### 常见的渠道
+### 常见的应用渠道
 ```
 qihu360 {} // 360手机助手
 yingyongbao {} // 腾讯应用宝
@@ -75,6 +75,27 @@ anzhi {} // 安智市场
 google {} // google play
 amazon {} // 亚马逊
 ```	
+
+### 常见的游戏渠道
+```
+aiqiyi {}
+aligame {}
+baidu_net {}
+coolpad {}
+huawei {}
+jinli {}
+lenovo {}
+leshi {}
+meizu {}
+mi {}
+mumayi {}
+oppo {}
+qihoo360 {}
+sogou {}
+vivo {}
+yx7477 {}
+yybao {}
+```
 
 ### 代码注释
 ```

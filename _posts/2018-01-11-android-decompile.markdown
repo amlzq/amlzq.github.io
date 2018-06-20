@@ -45,8 +45,15 @@ categories: jekyll update
 jarsigner -digestalg SHA1 -sigalg MD5withRSA -verbose -keystore [keystore path] -signedjar [signed_apk path] [new_apk path] [your_key_store_alias]
 ```
 
-* 对齐
-> zipalign -v 4 [signed_apk path] [aligned_apk path]
+* zipalign和V2签名
+> 位于Android SDK/build-tools/SDK版本/zipalign.exe <br>
+> zipalign 是对zip包对齐的工具,使APK包内未压缩的数据有序排列对齐,从而减少APP运行时内存消耗
+```
+zipalign -v 4 [signed_apk path] [aligned_apk path]			//4字节对齐优化
+zipalign -c -v 4 [aligned_apk path]        					//检查APK是否对齐
+```
+> zipalign可以在V1签名后执行 <br>
+> 但zipalign不能在V2签名后执行,只能在V2签名之前执行
 
 * 安装
 > adb install [aligned_apk path]
