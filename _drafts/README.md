@@ -355,6 +355,9 @@ jdk1.4换成这个,读操作超时
 System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 ```
 
+#### io
+* xml解析数据，webgame项目中有部分代码可以抽取
+
 #### 打包发布
 * [把Android library上传到jCenter和Maven Central](https://www.jianshu.com/p/0d0598b21bb8)
 * [Android Studio 中使用Gradle发布项目到JCenter仓库](https://www.jianshu.com/p/eb5ce8163a9b)
@@ -377,3 +380,77 @@ System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 https://www.jianshu.com/p/88f166dd43b7
 https://blog.csdn.net/zh_ang_lei/article/details/52385678
 https://github.com/baishixian/Share2
+
+
+### Kotlin学习博客系列
+* [Kotlin-01.入门介绍和基础语法(Basic Syntax)](http://lioil.win/2017/06/11/Kotlin-Introduction.html)
+
+
+### 项目管理博客系列
+
+#### 版本库管理
+* 结合SVN和Git
+
+### android推送博客系列
+
+#### 历史
+* 原生推送
+* C2DM->GCM->FCM
+```
+Firebase Cloud Messaging
+FCM是谷歌推出的最新的Android系统级别的消息推送服务（用来替换GCM）。
+GCM(Google Cloud Message for Android)是Google发布的Android服务器推送（push）技术。
+之前的C2DM(Android Cloud to Device Messaging)已与2012年6月26日被正式弃用。
+
+作者：hongjay
+链接：https://www.jianshu.com/p/6cf4dd76e508
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+```
+
+* 1.[原理](http://36kr.com/p/5073628.html)
+* 2.[最佳选择]()
+* [友盟推送集成文档](https://developer.umeng.com/docs/66632/detail/66744)
+* [信鸽推送集成文档](http://docs.developer.qq.com/xg/)
+
+* [极光推送集成文档](http://docs.jiguang.cn/jpush/client/Android/android_guide/#fcm)
+```
+特性:集成FCM通道，适合国内海外市场都要推送的应用
+```
+
+* [个推集成文档](http://docs.getui.com/getui/start/getting/)
+```
+特性:只有一个通道
+```
+
+##### 自己开发融合推送
+* 极光+小米+华为+魅族
+* 小米+华为+魅族+FCM
+* [MixPush](https://github.com/joyrun/MixPush)
+
+
+### Gradle常见设置
+```
+sourceSets {
+        chinese {
+            manifest.srcFile 'src/chinese/AndroidManifest.xml'
+            java.srcDirs = ['src/chinese/java']
+            resources.srcDirs = ['src/chinese/resources']
+            aidl.srcDirs = ['src/chinese/aidl']
+            renderscript.srcDirs = ['src/maom']
+            res.srcDirs = ['src/chinese/res']
+            assets.srcDirs = ['src/chinese/assets']
+            jniLibs.srcDir 'src/chinese/jniLibs'
+        }
+        global {
+            manifest.srcFile 'src/global/AndroidManifest.xml'
+            java.srcDirs = ['src/global/java']
+            resources.srcDirs = ['src/global/resources']
+            aidl.srcDirs = ['src/global/aidl']
+            renderscript.srcDirs = ['src/maom']
+            res.srcDirs = ['src/global/res']
+            assets.srcDirs = ['src/global/assets']
+            jniLibs.srcDir 'src/global/jniLibs'
+        }
+    }
+```

@@ -8,4 +8,4 @@ categories: jekyll update
 
 
 ## 参考文章
-* [Android-APK签名工具-jarsigner和apksigner](https://blog.csdn.net/qq_32115439/article/details/55520012)
+* [Android-APK签名工具-jarsigner和apksigner](https://www.jianshu.com/p/53078d03c9bf)
