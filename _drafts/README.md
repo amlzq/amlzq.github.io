@@ -24,6 +24,10 @@ categories: jekyll update
 * C:\Program Files\Java\jdk1.8.0_25\jre
 * I:\Android\android-studio-ide-171.4443003-windows\android-studio\jre
 
+### 做的比较好的Demo
+* 网易七鱼Demo
+* 当乐SDK Demo
+
 ### Android多线程下载
 * [Android多线程断点续传下载](https://www.jianshu.com/p/2b82db0a5181)
 > Demo
@@ -357,6 +361,24 @@ System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 
 #### io
 * xml解析数据，webgame项目中有部分代码可以抽取
+
+#### ui
+* 修改系统对话框的颜色
+```
+try {
+            Field mAlert = AlertDialog.class.getDeclaredField("mAlert");
+            mAlert.setAccessible(true);
+            Object mAlertController = mAlert.get(dialog);
+            Field mMessage = mAlertController.getClass().getDeclaredField("mMessageView");
+            mMessage.setAccessible(true);
+            TextView mMessageView = (TextView) mMessage.get(mAlertController);
+            mMessageView.setTextColor(Color.BLACK);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        }
+```
 
 #### 打包发布
 * [把Android library上传到jCenter和Maven Central](https://www.jianshu.com/p/0d0598b21bb8)
