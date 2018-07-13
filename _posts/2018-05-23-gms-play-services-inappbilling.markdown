@@ -25,10 +25,27 @@ categories: jekyll update
 ```
 > [Unity Android 内购 In-App Billing 实现&测试经历](https://www.jianshu.com/p/af15910535cc)
 
+## 测试
+
+### 
+* 将apk上次到封闭式渠道
+* 创建封闭式渠道
+* 添加测试人员
+* 将“加入测试的网址”发给测试人员，需要测试人员加入测试计划中。
+
+## 常见问题
+
+### 检查
+```
+封闭式渠道
+
+
+```
+
+### 您所要求的項目目前無法購買
+* [解决方法](http://www.coderphrase.com/archives/64)
+* 没有成功添加测试人员
+
 ---
 
 # 参考文章
-* [官方文档][facebook_developers_docs]
-
-[facebook_developers]: https://developers.facebook.com/
-[facebook_developers_docs]: https://developers.facebook.com/docs/apps
