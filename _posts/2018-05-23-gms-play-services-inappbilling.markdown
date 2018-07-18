@@ -13,6 +13,11 @@ categories: jekyll update
 * [官方文档](https://developer.android.com/google/play/billing/index.html)
 * [对接步骤](https://developer.android.com/google/play/billing/billing_integrate.html)
 
+## [实施步骤](https://developer.android.com/google/play/billing/billing_java_kotlin?hl=zh-cn)
+
+
+* [官方样例](https://github.com/googlesamples/android-play-billing)
+
 * 支付补单方案
 > [iOS的In-app Purchase与Android的In-app Billing](https://blog.csdn.net/darklinden/article/details/49506087)
 ```
@@ -48,4 +53,5 @@ categories: jekyll update
 
 ---
 
-# 参考文章
+## 参考文章
+* [结算时区分测试订单和正式订单-文末尾](http://wiki.midas.qq.com/post/index/2/32/54/0)

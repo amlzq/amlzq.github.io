@@ -350,6 +350,7 @@ FragmentTabHost+Fragment
 #### utils
 * [获取Manifest中<meta-data>元素的值](http://blog.csdn.net/zhanghao_hulk/article/details/8662917)
 * [android-RuntimePermissions](https://github.com/googlesamples/android-RuntimePermissions)
+* deviceUtil 获取 imsi/imei
 
 #### net
 * https://blog.csdn.net/hanqunfeng/article/details/4510338
