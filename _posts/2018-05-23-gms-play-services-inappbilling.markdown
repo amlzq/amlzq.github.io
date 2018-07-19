@@ -13,6 +13,11 @@ categories: jekyll update
 * [官方文档](https://developer.android.com/google/play/billing/index.html)
 * [对接步骤](https://developer.android.com/google/play/billing/billing_integrate.html)
 
+## [实施步骤](https://developer.android.com/google/play/billing/billing_java_kotlin?hl=zh-cn)
+
+
+* [官方样例](https://github.com/googlesamples/android-play-billing)
+
 * 支付补单方案
 > [iOS的In-app Purchase与Android的In-app Billing](https://blog.csdn.net/darklinden/article/details/49506087)
 ```
@@ -25,10 +30,28 @@ categories: jekyll update
 ```
 > [Unity Android 内购 In-App Billing 实现&测试经历](https://www.jianshu.com/p/af15910535cc)
 
+## 测试
+
+### 
+* 将apk上次到封闭式渠道
+* 创建封闭式渠道
+* 添加测试人员
+* 将“加入测试的网址”发给测试人员，需要测试人员加入测试计划中。
+
+## 常见问题
+
+### 检查
+```
+封闭式渠道
+
+
+```
+
+### 您所要求的項目目前無法購買
+* [解决方法](http://www.coderphrase.com/archives/64)
+* 没有成功添加测试人员
+
 ---
 
-# 参考文章
-* [官方文档][facebook_developers_docs]
-
-[facebook_developers]: https://developers.facebook.com/
-[facebook_developers_docs]: https://developers.facebook.com/docs/apps
+## 参考文章
+* [结算时区分测试订单和正式订单-文末尾](http://wiki.midas.qq.com/post/index/2/32/54/0)

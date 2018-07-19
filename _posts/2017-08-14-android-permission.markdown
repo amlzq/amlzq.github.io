@@ -5,178 +5,65 @@ date:   2017-08-14 00:00 +0800
 categories: jekyll update
 ---
 
-### 危险的权限
-adb shell pm list permissions -d -g
+### 危险的权限 2018/07/11/android 8.1.0
 ```
 C:\Users\asus>adb shell pm list permissions -d -g
-* daemon not running. starting it now on port 5037 *
-* daemon started successfully *
 Dangerous Permissions:
 
-group:android.permission-group.STATUS_BAR
+group:com.google.android.gms.permission.CAR_INFORMATION
+  permission:com.google.android.gms.permission.CAR_VENDOR_EXTENSION
+  permission:com.google.android.gms.permission.CAR_MILEAGE
+  permission:com.google.android.gms.permission.CAR_FUEL
 
-group:android.permission-group.USER_DICTIONARY
-  permission:android.permission.READ_USER_DICTIONARY
-
-group:android.permission-group.SYSTEM_TOOLS
-  permission:com.android.launcher.permission.UNINSTALL_SHORTCUT
-  permission:android.permission.CLEAR_APP_CACHE
-  permission:com.android.launcher.permission.INSTALL_SHORTCUT
-  permission:android.permission.ACCESS_MOCK_LOCATION
-  permission:android.permission.SUBSCRIBED_FEEDS_WRITE
-
-group:android.permission-group.WRITE_USER_DICTIONARY
-
-group:android.permission-group.MICROPHONE
-  permission:android.permission.RECORD_AUDIO
-
-group:android.permission-group.AFFECTS_BATTERY
-  permission:android.permission.CHANGE_WIFI_MULTICAST_STATE
-
-group:android.permission-group.BOOKMARKS
-  permission:com.android.browser.permission.WRITE_HISTORY_BOOKMARKS
-  permission:com.android.browser.permission.READ_HISTORY_BOOKMARKS
-
-group:android.permission-group.STORAGE
-  permission:android.permission.WRITE_EXTERNAL_STORAGE
-
-group:android.permission-group.ACCOUNTS
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.mobile
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.speechpersonalization
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.OTHER_SERVICES
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.sierraqa
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.notebook
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.writely
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.speech
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.mail
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.local
-  permission:android.permission.AUTHENTICATE_ACCOUNTS
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.print
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.wifi
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.knol
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.ah
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.blogger
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.orkut
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.lh2
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.news
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.sierrasandbox
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.groups2
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.adwords
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.cp
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.ig
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.android
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.gbase
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.dodgeball
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.finance
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.grandcentral
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.sierra
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.jotspot
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.youtube
-  permission:android.permission.MANAGE_ACCOUNTS
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.sitemaps
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.health
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.androidsecure
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.cl
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.talk
-  permission:android.permission.USE_CREDENTIALS
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.wise
-  permission:com.google.android.googleapps.permission.GOOGLE_AUTH.adsense
-
-group:android.permission-group.AUDIO_SETTINGS
-
-group:android.permission-group.WALLPAPER
-
-group:android.permission-group.ACCESSIBILITY_FEATURES
-
-group:android.permission-group.COST_MONEY
-
-group:android.permission-group.SYSTEM_CLOCK
-
-group:android.permission-group.SOCIAL_INFO
+group:android.permission-group.CONTACTS
   permission:android.permission.WRITE_CONTACTS
-  permission:android.permission.WRITE_SOCIAL_STREAM
-  permission:android.permission.READ_CALL_LOG
+  permission:android.permission.GET_ACCOUNTS
   permission:android.permission.READ_CONTACTS
-  permission:android.permission.READ_SOCIAL_STREAM
-  permission:android.permission.WRITE_CALL_LOG
 
-group:android.permission-group.PERSONAL_INFO
-  permission:android.permission.WRITE_CALENDAR
-  permission:android.permission.READ_PROFILE
-  permission:android.permission.READ_CALENDAR
-  permission:android.permission.WRITE_PROFILE
-
-group:android.permission-group.BLUETOOTH_NETWORK
-  permission:android.permission.BLUETOOTH_ADMIN
-  permission:android.permission.BLUETOOTH
-
-group:android.permission-group.SCREENLOCK
-  permission:android.permission.DISABLE_KEYGUARD
-
-group:android.permission-group.DEVELOPMENT_TOOLS
-
-group:android.permission-group.PHONE_CALLS
-  permission:android.permission.CALL_PHONE
-  permission:android.permission.PROCESS_OUTGOING_CALLS
+group:android.permission-group.PHONE
+  permission:android.permission.READ_CALL_LOG
+  permission:android.permission.ANSWER_PHONE_CALLS
+  permission:android.permission.READ_PHONE_NUMBERS
   permission:android.permission.READ_PHONE_STATE
+  permission:android.permission.CALL_PHONE
+  permission:android.permission.WRITE_CALL_LOG
   permission:android.permission.USE_SIP
-
-group:android.permission-group.LOCATION
-  permission:android.permission.ACCESS_COARSE_LOCATION
-  permission:android.permission.ACCESS_FINE_LOCATION
-
-group:android.permission-group.VOICEMAIL
+  permission:android.permission.PROCESS_OUTGOING_CALLS
   permission:com.android.voicemail.permission.ADD_VOICEMAIL
 
-group:android.permission-group.DISPLAY
-  permission:android.permission.SYSTEM_ALERT_WINDOW
+group:android.permission-group.CALENDAR
+  permission:android.permission.READ_CALENDAR
+  permission:android.permission.WRITE_CALENDAR
 
 group:android.permission-group.CAMERA
   permission:android.permission.CAMERA
 
-group:android.permission-group.SYNC_SETTINGS
+group:android.permission-group.SENSORS
+  permission:android.permission.BODY_SENSORS
 
-group:android.permission-group.HARDWARE_CONTROLS
+group:android.permission-group.LOCATION
+  permission:android.permission.ACCESS_FINE_LOCATION
+  permission:com.google.android.gms.permission.CAR_SPEED
+  permission:android.permission.ACCESS_COARSE_LOCATION
 
-group:android.permission-group.CALENDAR
+group:android.permission-group.STORAGE
+  permission:android.permission.READ_EXTERNAL_STORAGE
+  permission:android.permission.WRITE_EXTERNAL_STORAGE
 
-group:android.permission-group.APP_INFO
+group:android.permission-group.MICROPHONE
+  permission:android.permission.RECORD_AUDIO
 
-group:android.permission-group.NETWORK
-  permission:android.permission.NFC
-  permission:android.permission.CHANGE_WIFI_STATE
-  permission:android.permission.INTERNET
-  permission:android.permission.CHANGE_WIMAX_STATE
-
-group:android.permission-group.DEVICE_ALARMS
-
-group:android.permission-group.MESSAGES
-  permission:cn.cj.pe.permission.DELETE_MESSAGES
-  permission:cn.cj.pe.permission.READ_ATTACHMENT
-  permission:android.permission.SEND_SMS
-  permission:com.android.email.permission.READ_ATTACHMENT
-  permission:com.google.android.providers.talk.permission.WRITE_ONLY
+group:android.permission-group.SMS
   permission:android.permission.READ_SMS
-  permission:android.permission.RECEIVE_MMS
-  permission:cn.cj.pe.permission.REMOTE_CONTROL
-  permission:cn.cj.pe.permission.READ_MESSAGES
-  permission:android.permission.RECEIVE_SMS
-  permission:android.permission.READ_CELL_BROADCASTS
-  permission:com.google.android.providers.talk.permission.READ_ONLY
-  permission:android.permission.WRITE_SMS
   permission:android.permission.RECEIVE_WAP_PUSH
+  permission:android.permission.RECEIVE_MMS
+  permission:android.permission.RECEIVE_SMS
+  permission:android.permission.SEND_SMS
+  permission:android.permission.READ_CELL_BROADCASTS
 
 ungrouped:
-  permission:com.google.android.gms.permission.CAR_SPEED
-  permission:com.google.android.gms.permission.CAR_FUEL
-  permission:com.huawei.phoneservice.permission.CENTER_SERVICE_ACCESS
-  permission:com.android.permission.ENABLE_HWQRCODEDISPATCHER
-  permission:com.huawei.camera.permission.QRCODE_SCAN
-  permission:com.huawei.phoneservice.permission.SMART_FAQS_ACCESS
-  permission:com.google.android.gms.permission.CAR_MILEAGE
-  permission:org.simalliance.openmobileapi.SMARTCARD
-  permission:com.google.android.gms.permission.CAR_VENDOR_EXTENSION
+  permission:com.google.android.providers.talk.permission.WRITE_ONLY
+  permission:com.google.android.providers.talk.permission.READ_ONLY
 ```
 
 ### 全部权限
@@ -826,6 +713,6 @@ ungrouped:
 
 ---
 ### 参考文章
-* [权限概述][topics_permissions]
+* [权限概述][Permissions_overview]
 ---
-[topics_permissions]: https://developer.android.com/guide/topics/permissions/overview
+[Permissions_overview]: https://developer.android.com/guide/topics/permissions/overview

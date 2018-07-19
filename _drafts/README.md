@@ -9,11 +9,12 @@ title:  "填写标题"
 date:   1970-01-01 00:00 +0800
 categories: jekyll update
 ---
+
 ### 正文
----
+
 ### 参考文章
 * [文字说明][文字说明]
----
+
 [文字说明]: 链接
 ```
 
@@ -23,6 +24,10 @@ categories: jekyll update
 ### Java JDK的jre和Android Studio的jre区分和联系
 * C:\Program Files\Java\jdk1.8.0_25\jre
 * I:\Android\android-studio-ide-171.4443003-windows\android-studio\jre
+
+### 做的比较好的Demo
+* 网易七鱼Demo
+* 当乐SDK Demo
 
 ### Android多线程下载
 * [Android多线程断点续传下载](https://www.jianshu.com/p/2b82db0a5181)
@@ -345,6 +350,7 @@ FragmentTabHost+Fragment
 #### utils
 * [获取Manifest中<meta-data>元素的值](http://blog.csdn.net/zhanghao_hulk/article/details/8662917)
 * [android-RuntimePermissions](https://github.com/googlesamples/android-RuntimePermissions)
+* deviceUtil 获取 imsi/imei
 
 #### net
 * https://blog.csdn.net/hanqunfeng/article/details/4510338
@@ -353,6 +359,27 @@ jdk1.4换成这个,连接超时
 System.setProperty("sun.NET.client.defaultConnectTimeout", "10000");
 jdk1.4换成这个,读操作超时
 System.setProperty("sun.net.client.defaultReadTimeout", "5000");
+```
+
+#### io
+* xml解析数据，webgame项目中有部分代码可以抽取
+
+#### ui
+* 修改系统对话框的颜色
+```
+try {
+            Field mAlert = AlertDialog.class.getDeclaredField("mAlert");
+            mAlert.setAccessible(true);
+            Object mAlertController = mAlert.get(dialog);
+            Field mMessage = mAlertController.getClass().getDeclaredField("mMessageView");
+            mMessage.setAccessible(true);
+            TextView mMessageView = (TextView) mMessage.get(mAlertController);
+            mMessageView.setTextColor(Color.BLACK);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (NoSuchFieldException e) {
+            e.printStackTrace();
+        }
 ```
 
 #### 打包发布
@@ -379,3 +406,83 @@ System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 ### AndroidWebView与JS交互
 * https://yifeng.studio/2016/12/01/android-webview-java-js-interaction/
 * https://75team.com/post/android-webview-and-js.html
+
+
+### 系统分享功能
+https://www.jianshu.com/p/88f166dd43b7
+https://blog.csdn.net/zh_ang_lei/article/details/52385678
+https://github.com/baishixian/Share2
+
+
+### Kotlin学习博客系列
+* [Kotlin-01.入门介绍和基础语法(Basic Syntax)](http://lioil.win/2017/06/11/Kotlin-Introduction.html)
+
+
+### 项目管理博客系列
+
+#### 版本库管理
+* 结合SVN和Git
+
+### android推送博客系列
+
+#### 历史
+* 原生推送
+* C2DM->GCM->FCM
+```
+Firebase Cloud Messaging
+FCM是谷歌推出的最新的Android系统级别的消息推送服务（用来替换GCM）。
+GCM(Google Cloud Message for Android)是Google发布的Android服务器推送（push）技术。
+之前的C2DM(Android Cloud to Device Messaging)已与2012年6月26日被正式弃用。
+
+作者：hongjay
+链接：https://www.jianshu.com/p/6cf4dd76e508
+來源：简书
+简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
+```
+
+* 1.[原理](http://36kr.com/p/5073628.html)
+* 2.[最佳选择]()
+* [友盟推送集成文档](https://developer.umeng.com/docs/66632/detail/66744)
+* [信鸽推送集成文档](http://docs.developer.qq.com/xg/)
+
+* [极光推送集成文档](http://docs.jiguang.cn/jpush/client/Android/android_guide/#fcm)
+```
+特性:集成FCM通道，适合国内海外市场都要推送的应用
+```
+
+* [个推集成文档](http://docs.getui.com/getui/start/getting/)
+```
+特性:只有一个通道
+```
+
+##### 自己开发融合推送
+* 极光+小米+华为+魅族
+* 小米+华为+魅族+FCM
+* [MixPush](https://github.com/joyrun/MixPush)
+
+
+### Gradle常见设置
+```
+sourceSets {
+        chinese {
+            manifest.srcFile 'src/chinese/AndroidManifest.xml'
+            java.srcDirs = ['src/chinese/java']
+            resources.srcDirs = ['src/chinese/resources']
+            aidl.srcDirs = ['src/chinese/aidl']
+            renderscript.srcDirs = ['src/maom']
+            res.srcDirs = ['src/chinese/res']
+            assets.srcDirs = ['src/chinese/assets']
+            jniLibs.srcDir 'src/chinese/jniLibs'
+        }
+        global {
+            manifest.srcFile 'src/global/AndroidManifest.xml'
+            java.srcDirs = ['src/global/java']
+            resources.srcDirs = ['src/global/resources']
+            aidl.srcDirs = ['src/global/aidl']
+            renderscript.srcDirs = ['src/maom']
+            res.srcDirs = ['src/global/res']
+            assets.srcDirs = ['src/global/assets']
+            jniLibs.srcDir 'src/global/jniLibs'
+        }
+    }
+```
