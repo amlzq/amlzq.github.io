@@ -360,6 +360,14 @@ System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 * [Android Studio 中使用Gradle发布项目到JCenter仓库](https://www.jianshu.com/p/eb5ce8163a9b)
 * [5分钟发布 Android Library 项目到 JCenter](https://github.com/panpf/android-library-publish-to-jcenter)
 
+6. 执行命令打包并上传到 Bintray
+
+打开终端进入项目目录下，执行 gradlew bintrayUpload 命令即可
+
+千万不要在 Android Studio 的 Gradle 窗口中选择 "Run *** bintrayUpload" 执行，这样你会得到 build/libs/***-javadoc.jar could not be found. build/libs/***-sources.jar could not be found. poms/pom-default.xml (No such file or directory) 错误
+
+另外，如果你的本地已经配置了 Gradle 了，那么执行 gradle bintrayUpload 命令也可以。 gradlew 是 Gradle 的一层封装，如果你本地没有安装 Gradle gradlew 就会自动下载 Gradle
+
 * 最新
 | groupId | artifactId | version |
 | -------------- | -------------- | -------------- |
