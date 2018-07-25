@@ -119,6 +119,7 @@ set the doNotCompress to null
 > [问题分析](https://www.jianshu.com/p/fed8a392c0a0)
 
 ## 参考文章
+* [Command line tools](https://developer.android.com/studio/command-line/?hl=zh-cn)
 * [Android开发中常用的命令总结](https://www.jianshu.com/p/58a23804da71)
 * [签署您的应用](https://developer.android.com/studio/publish/app-signing#generate-key)
 * [获取Android SHA1 、生成jks密钥、签名Apk](https://www.jianshu.com/p/692ca2bcbac5)
