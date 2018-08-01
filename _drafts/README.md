@@ -104,7 +104,7 @@ dex分包方案
 #### utils
 * [获取Manifest中<meta-data>元素的值](http://blog.csdn.net/zhanghao_hulk/article/details/8662917)
 * [android-RuntimePermissions](https://github.com/googlesamples/android-RuntimePermissions)
-* deviceUtil 获取 imsi/imei
+* deviceUtil 获取 imsi/imei /IMEI/ MEID
 * 系统分享功能
 https://www.jianshu.com/p/88f166dd43b7
 https://blog.csdn.net/zh_ang_lei/article/details/52385678
@@ -170,9 +170,20 @@ https://75team.com/post/android-webview-and-js.html
 > https://www.jianshu.com/p/0e1b683e6108
 
 #### 打包发布
+
+##### 方法一
+* 使用[android-maven-gradle-plugin](https://github.com/dcendents/android-maven-gradle-plugin)
+* 使用[gradle-bintray-plugin](https://github.com/bintray/gradle-bintray-plugin)
+
+* [How to distribute your own Android library through jCenter and Maven Central from Android Studio](https://inthecheesefactory.com/blog/how-to-upload-library-to-jcenter-maven-central-as-dependency/en)
 * [5分钟发布 Android Library 项目到 JCenter](https://github.com/panpf/android-library-publish-to-jcenter)
+* [Simple way to publish your Android library to JCenter](https://medium.com/@yegor_zatsepin/simple-way-to-publish-your-android-library-to-jcenter-d1e145bacf13)
+
 * [Publish an Android library on jCenter](https://medium.com/@eliaslecomte/publish-an-android-library-on-jcenter-a37770dc9570)
 * [How to Publish Your Android Studio Library to JCenter](https://medium.com/@daniellevass/how-to-publish-your-android-studio-library-to-jcenter-5384172c4739)
+
+##### 方法二，使用[bintray-release](https://github.com/novoda/bintray-release)
+* [bintray-release使用指南（一）](https://www.jianshu.com/p/b4c46ee78b2f)
 
 ### android-support-business
 * 采用分支管理
@@ -389,3 +400,17 @@ sourceSets {
         }
     }
 ```
+
+### 关于“模块”和“组件”
+* 独立的业务模块，如“首页模块”，“直播间模块”
+* 单一功能的组件，如“视频组件”，“支付组件”，以“module”开发，并以SDK形式供外部使用
+* 比较
+```
+模块相对组件来说粒度更大
+一个模块可以包含多个组件
+目的都是为了代码重用和业务解耦
+在划分时，模块化是业务导向，组件化是功能导向
+```
+
+* 参考
+* [Android 组件化最佳实践](https://mp.weixin.qq.com/s?__biz=MzIwMTAzMTMxMg==&mid=2649493003&idx=1&sn=ded14257bd95f8993f367b633b92c04c&chksm=8eec85f4b99b0ce2a9dabfab1f4b977ba8fbecfb702ffdc6e563d5f4e3b1bea0c1a68c5edddf&mpshare=1&scene=1&srcid=07313y6MVPCvZ3Sih6I98aLk&pass_ticket=3WDG1cWKiqbL%2Fu4PX52nDZcXamU4b2%2BeBCH9SBIDUwgsHN%2BJAp8oeAYwhcZsYl4a#rd)

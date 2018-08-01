@@ -127,6 +127,10 @@ Mozilla/5.0 (Linux; Android 6.0; U10 Build/MRA58K; wv) AppleWebKit/537.36 (KHTML
 包名遵循“DNS反转”约定，将企业组织或者公司的域名反转后，在尾部附加上应用名称，com.公司名.项目名，遵循此约定可以保证包名的唯一性
 ```
 
+### 
+```
+publishNonDefault true //去除gradle对library module默认只编译release buildType的限制
+```
 
 # 参考文章
 * [Authenticating Your Client][Authenticating_Your_Client]

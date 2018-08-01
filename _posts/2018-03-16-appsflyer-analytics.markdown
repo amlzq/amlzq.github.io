@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Android海外系列-选择数据统计平台"
-date:   2018-03-16 22:03:00 +0800
+title:  "Appsflyer数据统计"
+date:   2018-03-17 14:56:00 +0800
 categories: jekyll update
 ---
 ### 在海外市场，你可能会在投放这些广告
@@ -30,6 +30,9 @@ Twitter Ads
 * Windows Phone
 * Windows Store
 
+```
+adb shell am broadcast -a com.android.vending.INSTALL_REFERRER -n com.your.appid/com.adjust.sdk.AdjustReferrerReceiver --es "referrer" "adjust_reftag%3Dabc1234%26tracking_id%3D123456789%26utm_source%3Dnetwork%26utm_medium%3Dbanner%26utm_campaign%3Dcampaign"
+```
 
 ---
 #### 比对[adjust][adjust] 和 [appsflyer][appsflyer]

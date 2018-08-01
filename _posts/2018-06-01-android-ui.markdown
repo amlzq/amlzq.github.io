@@ -58,6 +58,13 @@ categories: jekyll update
 * [IOS和Android规范，UI看什么？（二）](http://old.zcool.com.cn/article/ZNDk4NDQ4.html)
 * [IOS和Android规范，UI看什么？（三）](http://old.zcool.com.cn/article/ZNDk5Mjcy.html)
 
+### ICON
+* [设计规范1](https://developer.android.com/guide/practices/ui_guidelines/icon_design)
+* [设计规范2](https://material.io/design/iconography/product-icons.html#)
+* [设计规范3](https://www.jianshu.com/p/7a238062129a)
+* [小米特殊要求1](https://dev.mi.com/console/doc/detail?pId=1162)
+* [小米特殊要求2](https://dev.mi.com/doc/p=204/index.html)
+
 ### Android
 * 设计时，用1080*1920的设计稿进行设计
 * 切图时，切xhdpi，xxhdpi的图标，图片为PNG格式，xxhdpi的banner等位图，大幅的背景图出jpg格式。
