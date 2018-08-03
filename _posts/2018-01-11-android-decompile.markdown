@@ -51,7 +51,7 @@ apktool d <apk path> -o <output path>
 
 #### 打包
 ```
-apktool b <new_apk path>
+apktool b <file path> -o <new_apk path>
 ```
 
 #### 签名
@@ -117,6 +117,13 @@ set the doNotCompress to null
 > [Decompile An Apk success,But Recompile fail](https://github.com/iBotPeaches/Apktool/issues/1623)
 > [CREATEPROCESS ERROR=206,文件名或扩展名太长](http://www.blackcat-tech.com/archives/740)
 > [问题分析](https://www.jianshu.com/p/fed8a392c0a0)
+
+* 错误2
+```
+Failure [INSTALL_FAILED_TEST_ONLY: installPackageLI]
+```
+* [解决方案1](https://blog.csdn.net/chf1142152101/article/details/70738868)
+* [解决方案2](https://www.jianshu.com/p/8f5730cab8fc)
 
 ## 参考文章
 * [Command line tools](https://developer.android.com/studio/command-line/?hl=zh-cn)
