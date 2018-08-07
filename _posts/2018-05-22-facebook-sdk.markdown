@@ -32,9 +32,15 @@ keytool -exportcert -alias androiddebugkey -keystore "C:\Users\asus\.android\deb
 zLlKaTuvmZF8adWATAUGOZJDYIs=
 ```
 
+* 错误的散列
+```
+n0HVZZ3RXdM4KzR+FILGAc0Ak8c=
+mBiKXr2MyG2TrTkTYfnKF/eLFuM=
+```
+
 * 添加发布密钥散列
 ```
-keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
+C:\Users\asus\openssl-0.9.8k_X64\bin>keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
 替换您的发布密钥别名和 keystore 路径
 ```
 

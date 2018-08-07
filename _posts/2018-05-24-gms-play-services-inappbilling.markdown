@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "对接Google In-App Billing"
-date:   2018-05-23 23:49 +0800
+date:   2018-05-24 23:49 +0800
 categories: jekyll update
 ---
 

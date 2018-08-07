@@ -5,6 +5,7 @@ date:   2018-05-23 19:49 +0800
 categories: jekyll update
 ---
 * 自己解决翻墙问题
+* [Google客服帮助](https://support.google.com/googleplay/android-developer#topic=3450769)
 
 ## [Google API For Android](https://developers.google.com/android/)
 
