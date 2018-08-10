@@ -135,6 +135,12 @@ System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 #### io
 * xml解析数据，webgame项目中有部分代码可以抽取
 
+#### log
+* [orhanobut/logger](https://github.com/orhanobut/logger)
+* [JakeWharton/timber](https://github.com/JakeWharton/timber)
+* [如何选择Logger：Android日志系统分析与比较](https://www.jianshu.com/p/316f065cd00c)
+* [Log最佳实践](https://www.jianshu.com/p/586c27e77e81)
+
 #### ui
 * 修改系统对话框的颜色
 ```

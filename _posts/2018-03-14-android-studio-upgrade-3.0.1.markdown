@@ -76,6 +76,12 @@ In the case of corrupt Gradle processes, you can also try closing the IDE and th
 ```
 * [解决方式](https://www.jianshu.com/p/25d9db6d61f4)
 
+### 问题5
+```
+Unable to resolve dependency for ':demo@chineseDebug/compileClasspath': Could not resolve project :sdk. Open File Show Details
+```
+* android module 不能再次设置productFlavors
+
 ### 参考文章
 * [迁移到 Android Plugin for Gradle 3.0.0](https://developer.android.com/studio/build/gradle-plugin-3-0-0-migration)
 * [个人总结：AS升级到3.0后遇到的问题及解决方法](https://www.jianshu.com/p/02a62574d9a1)

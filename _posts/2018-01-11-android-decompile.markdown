@@ -84,6 +84,19 @@ zipalign -c -v 4 <aligned_apk path>        					//检查APK是否对齐
 ### 更换apktool版本
 * 需要删除这个文件`C:\Users\Administrator\apktool\framework\1.apk`
 
+### 多个smali文件
+```
+smali
+smali_classes2
+```
+```
+smali = classes.dex
+smali_classes2 = classes2.dex
+```
+* [apktool反编译会有2个smail文件目录,smali_classes2](http://www.ko0zh1.cc/2016/10/05/apktool%E5%8F%8D%E7%BC%96%E8%AF%91%E4%BC%9A%E6%9C%892%E4%B8%AAsmail%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95,smali_classes2/)
+* [Folder smali_classes2](https://github.com/iBotPeaches/Apktool/issues/1294)
+* [配置方法数超过 64K 的应用](https://developer.android.com/studio/build/multidex)
+
 ### 常见问题
 * 错误1
 ```
