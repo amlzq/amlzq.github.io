@@ -1,12 +1,23 @@
 ---
 layout: post
-title:  "GooglePixel设备"
+title:  "GooglePixel刷机"
 date:   2018-06-01 00:00 +0800
 categories: jekyll update
 ---
-### ### device info
-* IMEI/MEID
-> 
+
+### OTA升级
+
+#### 步骤1
+* 选择机型，下载[Factory Images for Nexus and Pixel Devices](https://developers.google.com/android/images)
+```
+"sailfish" for Pixel
+sailfish-ota-ppr1.180610.009-ddead1af.zip
+```
+
+#### 命令行执行
+```
+
+```
 
 ### Factory Images
 
@@ -198,7 +209,10 @@ serving: 'D:\GoogleChromeDownloads\ThirdParty_Android\googleRom\sailfish-ota-opm
 iled to read command: Connection reset by peer
 ```
 
----
+### 设备信息
+* IMEI/MEID
+> 
+
 ### 参考文章
 * [文字说明][文字说明]
 ---
