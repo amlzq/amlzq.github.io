@@ -50,8 +50,13 @@ C:\Users\asus\openssl-0.9.8k_X64\bin>keytool -exportcert -alias YOUR_RELEASE_KEY
 
 ### [向您的应用或网站添加 Facebook 登录功能](https://developers.facebook.com/docs/facebook-login)
 
+
+### 使用广告SDK
+
+
 # 参考文章
 * [官方文档][facebook_developers_docs]
 
 [facebook_developers]: https://developers.facebook.com/
 [facebook_developers_docs]: https://developers.facebook.com/docs/apps
+[facebook_developers_docs_android]: https://developers.facebook.com/docs/android/
