@@ -110,7 +110,18 @@ https://www.jianshu.com/p/88f166dd43b7
 https://blog.csdn.net/zh_ang_lei/article/details/52385678
 https://github.com/baishixian/Share2
 
+* 关于签名字符串
+https://juejin.im/post/589a81f0b123db16a3b63b2d
+https://blog.csdn.net/lhk147852369/article/details/79637500
+https://www.jianshu.com/p/edfb4922840d
+https://blog.csdn.net/Dr_abandon/article/details/78676377
+https://stackoverflow.com/questions/46449539/how-to-change-apk-signed-key-from-sha-1-to-sha256
+https://blog.csdn.net/u010071621/article/details/54692191
+http://shangjin615.iteye.com/blog/2353515
+https://gist.github.com/nolanlawson/aae1735f54012da8538adf05817a01a7
+
 #### net
+* https://juejin.im/entry/57c4cf3befa631005ac93312
 * https://blog.csdn.net/hanqunfeng/article/details/4510338
 ```
 jdk1.4换成这个,连接超时
@@ -119,7 +130,16 @@ jdk1.4换成这个,读操作超时
 System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 ```
 * 原声API类库适配HTTPS
+> https://developer.android.com/training/articles/security-ssl?hl=zh-cn#CommonProblems
+> https://juejin.im/entry/58cf9034a22b9d0064374dd9
 > https://juejin.im/entry/575ab9b36be3ff0069492bc6
+> https://imququ.com/post/sth-about-switch-to-https.html
+
+* 关于HTTPS证书
+> http://frank-zhu.github.io/android/2017/03/30/android-https-ssl-part-02/
+
+* 四种常见的 POST 提交数据方式
+https://imququ.com/post/four-ways-to-post-data-in-http.html
 
 #### download
 * Android多线程下载
