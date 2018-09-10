@@ -137,6 +137,7 @@ System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 
 * 关于HTTPS证书
 > http://frank-zhu.github.io/android/2017/03/30/android-https-ssl-part-02/
+https://www.jianshu.com/p/286fe46d5b11
 
 * 四种常见的 POST 提交数据方式
 https://imququ.com/post/four-ways-to-post-data-in-http.html

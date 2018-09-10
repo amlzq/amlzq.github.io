@@ -4,8 +4,15 @@ title:  "Android keytool命令"
 date:   2018-05-25 19:00 +0800
 categories: jekyll update
 ---
-## Java\jdk1.7.0_80\bin\keytool 工具命令
-* 打开CMD，输入keytool，查看命令
+
+### 本机环境
+* windows 7
+* 工具路径
+```
+C:\Program Files\Java\jdk1.8.0_25\bin\keytool.exe
+```
+
+* 打开CMD，输入keytool，查看命令列表
 ```
 C:\Users\%USERPROFILE%>keytool
 密钥和证书管理工具
@@ -32,7 +39,7 @@ C:\Users\%USERPROFILE%>keytool
 
 使用 "keytool -command_name -help" 获取 command_name 的用法
 ```
----
+
 ### 常用业务
 
 * 生成证书，这里以jdk1.7版本为例，jdk1.8和jdk1.7的算法有所不同
@@ -62,6 +69,8 @@ Country Code(国家、地区代码): CN
 ```
 keytool -list -v -keystore <keystore path>			详细
 keytool -list -keystore <keystore path>				简单
+```
+```
 样例:
 C:\Users\%USERPROFILE%>keytool -list -v -keystore C:\Users\%USERPROFILE%\.android\debug.keystore
 输入密钥库口令: android
@@ -112,14 +121,12 @@ keytool -exportcert -list -v -alias <your-key-name> -keystore <path-to-productio
 keytool -exportcert -list -v -alias androiddebugkey -keystore %USERPROFILE%\.android\debug.keystore
 ```
 
-* 通过APK查看签名证书
-> 解压apk文件
+* 通过APK查看签名证书，解压apk文件
 ```
 keytool -printcert -file <META-INF/CERT.RSA PATH>
 ```
----
 
-# 参考文章
+### 参考文章
 * debug路径: C:/Users/%USERPROFILE%/.android/debug.keystore
 * [Authenticating Your Client][Authenticating_Your_Client]
 
