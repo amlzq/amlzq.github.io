@@ -120,6 +120,10 @@ https://blog.csdn.net/u010071621/article/details/54692191
 http://shangjin615.iteye.com/blog/2353515
 https://gist.github.com/nolanlawson/aae1735f54012da8538adf05817a01a7
 
+* 关于获取app大小问题
+https://blog.csdn.net/u014748504/article/details/51112497
+http://blog.leanote.com/post/svenpaper/Android-O-%E7%89%88%E6%9C%AC%E5%AE%89%E8%A3%85%E5%8C%85%E5%A4%A7%E5%B0%8F%E8%8E%B7%E5%8F%96%E5%A4%B1%E8%B4%A5%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90%E5%8F%8A%E8%A7%A3%E5%86%B3
+
 #### net
 * https://juejin.im/entry/57c4cf3befa631005ac93312
 * https://blog.csdn.net/hanqunfeng/article/details/4510338
@@ -136,7 +140,7 @@ System.setProperty("sun.net.client.defaultReadTimeout", "5000");
 > https://imququ.com/post/sth-about-switch-to-https.html
 
 * 关于HTTPS证书
-> http://frank-zhu.github.io/android/2017/03/30/android-https-ssl-part-02/
+http://frank-zhu.github.io/android/2017/03/30/android-https-ssl-part-02/
 https://www.jianshu.com/p/286fe46d5b11
 
 * 四种常见的 POST 提交数据方式
@@ -214,14 +218,62 @@ https://75team.com/post/android-webview-and-js.html
 
 ### android-support-business
 * 采用分支管理
-* android-support-payment
+* android-support-billing
 * android-support-push
 * android-support-share
 * android-support-maps
 * android-support-analytis
 
-### AndroidTools需求
+#### support-share
+* https://github.com/cclink/UniShare
+
+### AndroidTools development requirements
 * [专访黑域](https://sspai.com/post/37950)
+* https://github.com/Mike-bel/MDStudySamples.git
+
+* google play My Device
+```
+应用程序：My Device
+包名：com.anu.main.myandroid
+总计：null
+版本：1.6.0 # 8
+签名：38e4aad2713dbb023b1ca5b4af65bc60
+```
+
+* google play 黑閾
+```
+应用程序：黑閾
+包名：me.piebridge.brevent
+总计：null
+版本：3.3.8.1 # 283
+签名：52238d8c75bd02d4ed730d6d1092fb82
+```
+
+* 适配Android 6.0权限
+* 应用信息页，增加小红点
+* 增加功能列表，TBSX5
+* 增加友盟分享和推送
+* 增加查看CPS设备标识 和 Android ID 界面
+* [ddmlib使用入门](https://www.jianshu.com/p/f123ee064035)
+* [cosysoft/device](https://github.com/cosysoft/device)
+* 查看设备WebView Info
+* 增加二维码扫描（七鱼SDKDemo/zxing）
+```
+android webkit useragent
+```
+
+* 系统分享功能和选择手机文件功能
+```
+https://github.com/baishixian/Share2
+```
+
+* [我的设备](https://play.google.com/store/apps/details?id=com.anu.main.myandroid)
+> 分享功能
+
+* 查看密钥散列
+> https://stackoverflow.com/questions/23674131/android-facebook-integration-invalid-key-hash
+
+* 应用双开，克隆应用
 
 ### android-practice 增加内容
 * 底部导航条
@@ -441,3 +493,11 @@ sourceSets {
 
 * 参考
 * [Android 组件化最佳实践](https://mp.weixin.qq.com/s?__biz=MzIwMTAzMTMxMg==&mid=2649493003&idx=1&sn=ded14257bd95f8993f367b633b92c04c&chksm=8eec85f4b99b0ce2a9dabfab1f4b977ba8fbecfb702ffdc6e563d5f4e3b1bea0c1a68c5edddf&mpshare=1&scene=1&srcid=07313y6MVPCvZ3Sih6I98aLk&pass_ticket=3WDG1cWKiqbL%2Fu4PX52nDZcXamU4b2%2BeBCH9SBIDUwgsHN%2BJAp8oeAYwhcZsYl4a#rd)
+
+
+### 开发Android Library的要求
+* 处理R.java
+```
+https://blog.csdn.net/ccpat/article/details/50738811
+https://github.com/cclink/AndroidRClassGenerator/blob/master/src/RClassGenerator.py
+```
