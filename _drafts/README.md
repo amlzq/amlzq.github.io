@@ -33,7 +33,7 @@ categories: jekyll update
 
 ### 查看apk包体信息
 * 需要apk
-* 通过Android DevTools应用查看
+* 通过Android Tools工具查看
 * 通过python脚本查看
 
 ### gms-play-services
@@ -158,7 +158,13 @@ https://imququ.com/post/four-ways-to-post-data-in-http.html
 > 靠谱
 
 #### io
-* xml解析数据，webgame项目中有部分代码可以抽取
+* xml数据存取，webgame 项目中有部分代码可以抽取
+* SP数据存取
+* File数据存取
+* MetaData数据存取
+* Assert数据存取
+* raw数据存取
+* 缓存
 
 #### log
 * [orhanobut/logger](https://github.com/orhanobut/logger)
@@ -224,56 +230,10 @@ https://75team.com/post/android-webview-and-js.html
 * android-support-maps
 * android-support-analytis
 
+#### support-billing
+
 #### support-share
 * https://github.com/cclink/UniShare
-
-### AndroidTools development requirements
-* [专访黑域](https://sspai.com/post/37950)
-* https://github.com/Mike-bel/MDStudySamples.git
-
-* google play My Device
-```
-应用程序：My Device
-包名：com.anu.main.myandroid
-总计：null
-版本：1.6.0 # 8
-签名：38e4aad2713dbb023b1ca5b4af65bc60
-```
-
-* google play 黑閾
-```
-应用程序：黑閾
-包名：me.piebridge.brevent
-总计：null
-版本：3.3.8.1 # 283
-签名：52238d8c75bd02d4ed730d6d1092fb82
-```
-
-* 适配Android 6.0权限
-* 应用信息页，增加小红点
-* 增加功能列表，TBSX5
-* 增加友盟分享和推送
-* 增加查看CPS设备标识 和 Android ID 界面
-* [ddmlib使用入门](https://www.jianshu.com/p/f123ee064035)
-* [cosysoft/device](https://github.com/cosysoft/device)
-* 查看设备WebView Info
-* 增加二维码扫描（七鱼SDKDemo/zxing）
-```
-android webkit useragent
-```
-
-* 系统分享功能和选择手机文件功能
-```
-https://github.com/baishixian/Share2
-```
-
-* [我的设备](https://play.google.com/store/apps/details?id=com.anu.main.myandroid)
-> 分享功能
-
-* 查看密钥散列
-> https://stackoverflow.com/questions/23674131/android-facebook-integration-invalid-key-hash
-
-* 应用双开，克隆应用
 
 ### android-practice 增加内容
 * 底部导航条
