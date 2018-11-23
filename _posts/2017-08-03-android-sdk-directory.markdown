@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Android SDK介绍"
-date:   2017-08-01 00:00 +0800
+title:  "Android SDK目录介绍"
+date:   2017-08-03 20:00 +0800
 categories: jekyll update
 ---
 
-### androidSDK目录说明
+### androidSDK 目录说明
 1. add-ons：这里面保存着附加库，比如Google Maps，当然你如果安装了OphoneSDK，这里也会有一些类库在里面。
 2. docs：这里面是Android SDK API参考文档，所有的API都可以在这里查到。
 3. market_licensing：作为AndroidMarket版权保护组件，一般发布付费应用到电子市场可以用它来反盗版。
