@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "AndroidGradle"
+title:  "Android Gradle"
 date:   2018-06-04 10:00 +0800
 categories: jekyll update
 ---
-### 正文
 
 所以我们需要在这个compile中增加exclude, 把google的广告模块去掉,如下:
 compile ('com.facebook.android:audience-network-sdk:4.8.2'){
@@ -31,7 +30,6 @@ buildTypes {
 
 // gradlew -q dependencies app:dependencies --configuration comp
 // 查看support libraries must use the exact same version specification问题
-
 
 
 sourceSets {
@@ -66,9 +64,5 @@ sourceSets {
             jniLibs.srcDir 'src/web/jniLibs'
         }
     }
-    
----
-### 参考文章
-* [文字说明][文字说明]
----
-[文字说明]: 链接
+
+- [Android Gradle进阶配置指南](https://juejin.im/post/5be97882e51d4502df234ee4)
