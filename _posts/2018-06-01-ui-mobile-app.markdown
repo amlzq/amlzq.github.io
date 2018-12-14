@@ -85,7 +85,15 @@ categories: jekyll update
 * 
 
 #### 尺寸换算
-* [iOS和android布局开发单位对比(pt VS dp)](https://juejin.im/entry/5a37bd866fb9a04509099d25)
+- [iOS和android布局开发单位对比(pt VS dp)](https://juejin.im/entry/5a37bd866fb9a04509099d25)
+
+#### SVG
+- [添加多密度矢量图形](https://developer.android.com/studio/write/vector-asset-studio?hl=zh-cn)
+- 设计师输出png图片，通过上传iconfont官网后再下载使用
+```
+https://andyliwr.github.io/2018/01/10/ps_cutterman/
+```
+- 设计师输出png图片，通过上传iconfont官网后再下载使用
 
 ### iOS UI
 
@@ -107,3 +115,5 @@ categories: jekyll update
 
 - [Android UI 设计规范](https://www.jianshu.com/p/b38e81be51ca)
 - [追随Google的脚步，知乎安卓客户端Material Design实战规范！](http://www.tuyiyi.com/v/40056.html)
+
+
