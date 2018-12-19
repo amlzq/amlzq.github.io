@@ -108,6 +108,8 @@ https://andyliwr.github.io/2018/01/10/ps_cutterman/
 | xxhdpi | 480 | 1080*1920 |
 | xxxhdpi | 960 | 1440*2560 |
 
+- android系统字体
+- [安卓系统的默认中文字体](https://www.zhihu.com/question/23487706)
 
 * 设计时，用1080*1920的设计稿进行设计
 * 切图时，切xhdpi，xxhdpi的图标，图片为PNG格式，xxhdpi的banner等位图，大幅的背景图出jpg格式。
