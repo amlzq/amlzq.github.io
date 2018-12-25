@@ -66,3 +66,11 @@ sourceSets {
     }
 
 - [Android Gradle进阶配置指南](https://juejin.im/post/5be97882e51d4502df234ee4)
+
+- 加@aar与不加的区别
+```
+首先这是指定格式，@aar或者@jar
+其次会丢失传递依赖
+有些lib不支持@jar，比如：com.android.support:appcompat-v7
+```
+- [Why should I include a gradle dependency as `@aar`](https://stackoverflow.com/questions/30157575/why-should-i-include-a-gradle-dependency-as-aar)

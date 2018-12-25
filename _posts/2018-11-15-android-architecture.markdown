@@ -37,6 +37,9 @@ fragment为view
 - 项目
 - [android-architecture](https://github.com/googlesamples/android-architecture)
 
+- 实践
+- []()
+
 ### AAC
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/)
 

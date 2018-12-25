@@ -29,3 +29,7 @@ compile(name: 'aar_file_name', ext: 'aar')
 
 
 ### AS 3.2 / Gralde 4.6
+```
+compileOnly
+api/implementation
+```
