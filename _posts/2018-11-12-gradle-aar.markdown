@@ -26,6 +26,15 @@ compile(name: 'aar_file_name', ext: 'aar')
 
 ### AS 3.0 / Gralde 4.1
 - 
-
+```
+compile files('libs/toutiao-applog.aar')
+```
 
 ### AS 3.2 / Gralde 4.6
+- 
+```
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    ...
+}
+```
