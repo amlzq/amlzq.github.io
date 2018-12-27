@@ -37,4 +37,6 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
     ...
 }
+compileOnly
+api/implementation
 ```
