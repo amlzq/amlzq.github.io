@@ -37,4 +37,7 @@ at android.support.v4.app.Fragment.requestPermissions(Fragment.java:1031)
 * [1.0](http://note.tyz.ren/blog/post/zerozhiqin/%E5%A6%82%E4%BD%95%E5%9C%A8%E5%9B%9E%E8%B0%83%E6%97%B6%E5%88%A4%E6%96%ADActivity%EF%BC%8CFragment%EF%BC%8CImageView%E7%AD%89%E7%AD%89%E6%98%AF%E5%90%A6%E5%B7%B2%E7%BB%8F%E8%A2%AB%E5%85%B3%E9%97%AD)
 ```
 
-### 参考文章
+- Manifest merger failed with multiple errors, see logs
+```
+tools:replace="label,allowBackup"
+```
