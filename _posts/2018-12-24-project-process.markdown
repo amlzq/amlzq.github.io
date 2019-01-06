@@ -25,3 +25,11 @@ https://juejin.im/entry/5879aa9cb123db005de3a2fa
 一个android文件的Uri地址一般如下： 
 content://media/external/images/media/62026
 ```
+
+- [通过wifi唯一标志推荐熟人](https://juejin.im/post/5c2daea6f265da617974f1e8)
+```
+WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+WifiInfo info = wifiManager.getConnectionInfo ();
+String ssid = info.getSSID();//SSID就是手机上搜索到的wifi名字（本质是一串字符）
+String bssid = info.getBSSID();//BSSID相当于无线路由器的唯一值（本质是一个MAC地址） 
+```
