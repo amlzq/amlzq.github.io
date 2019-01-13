@@ -9,6 +9,8 @@ categories: jekyll update
 * 在[Facebook for Developers后台][facebook_developers]添加新应用
 ![]({{ site.baseurl }}/assets/facebook_sdk/add_app.png)
 
+- 设置应用域名
+
 ### 第二步设置新应用
 ![]({{ site.baseurl }}/assets/facebook_sdk/set_app.png)
 
@@ -27,12 +29,11 @@ categories: jekyll update
 ```
 keytool -exportcert -alias androiddebugkey -keystore "C:\Users\USERNAME\.android\debug.keystore" | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" sha1 -binary | "PATH_TO_OPENSSL_LIBRARY\bin\openssl" base64
 样例:
-keytool -exportcert -alias androiddebugkey -keystore "C:\Users\asus\.android\debug.keystore" | C:\Users\asus\openssl-0.9.8k_X64\bin\openssl sha1 -binary | C:\Users\asus\openssl-0.9.8k_X64\bin\openssl base64
+keytool -exportcert -alias androiddebugkey -keystore "C:\Users\USERNAME\.android\debug.keystore" | C:\Users\USERNAME\openssl-0.9.8k_X64\bin\openssl sha1 -binary | C:\Users\USERNAME\openssl-0.9.8k_X64\bin\openssl base64
 输入密钥库口令:  android
-zLlKaTuvmZF8adWATAUGOZJDYIs=
 ```
 
-* 错误的散列
+* 一些错误的散列
 ```
 n0HVZZ3RXdM4KzR+FILGAc0Ak8c=
 mBiKXr2MyG2TrTkTYfnKF/eLFuM=
@@ -40,7 +41,7 @@ mBiKXr2MyG2TrTkTYfnKF/eLFuM=
 
 * 添加发布密钥散列
 ```
-C:\Users\asus\openssl-0.9.8k_X64\bin>keytool -exportcert -alias YOUR_RELEASE_KEY_ALIAS -keystore YOUR_RELEASE_KEY_PATH | openssl sha1 -binary | openssl base64
+C:\Users\USERNAME\openssl-0.9.8k_X64\bin>keytool -exportcert -alias "YOUR_RELEASE_KEY_ALIAS" -keystore "YOUR_RELEASE_KEY_FILE_PATH" | C:\Users\USERNAME\openssl-0.9.8k_X64\bin\openssl sha1 -binary | C:\Users\USERNAME\openssl-0.9.8k_X64\bin\openssl base64
 替换您的发布密钥别名和 keystore 路径
 ```
 
