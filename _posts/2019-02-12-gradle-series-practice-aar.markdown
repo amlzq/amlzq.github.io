@@ -1,11 +1,16 @@
 ---
 layout: post
-title:  "Android Studio配置本地aar包依赖"
-date:   2018-11-12 10:00
+title:  "配置本地aar包依赖"
+date:   2019-02-12 10:00
 categories: jekyll update
 ---
 
-### AS 2.3 / Gralde 3.3
+### 打包aar包
+
+
+### 使用aar包
+
+#### AS2.3 / Gralde3.3
 - 在Project的build.gradle中配置
 ```
 allprojects {
@@ -24,13 +29,14 @@ allprojects {
 compile(name: 'aar_file_name', ext: 'aar')
 ```
 
-### AS 3.0 / Gralde 4.1
+
+#### AS3.0 / Gralde4.1
 - 
 ```
 compile files('libs/toutiao-applog.aar')
 ```
 
-### AS 3.2 / Gralde 4.6
+#### AS3.2 / Gralde4.6
 - 
 ```
 dependencies {
