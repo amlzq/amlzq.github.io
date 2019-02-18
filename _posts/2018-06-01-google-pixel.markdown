@@ -213,6 +213,9 @@ iled to read command: Connection reset by peer
 * IMEI/MEID
 > 
 
+### ROOT方法
+- [Google Pixel线刷官方包、Twrp、root操作步骤](https://blog.csdn.net/qq_30483585/article/details/80605153)
+
 ### 参考文章
 * [文字说明][文字说明]
 ---
