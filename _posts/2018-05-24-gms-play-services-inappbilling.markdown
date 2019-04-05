@@ -5,7 +5,8 @@ date:   2018-05-24 23:49 +0800
 categories: jekyll update
 ---
 
-* 自己解决翻墙问题
+- 遇到问题首选官方文档和官方客服，血的教训，增加内购代码只要1个小时，发布应用和测试内购需花了10多天。
+- 自己解决翻墙问题
 
 ## [Google API For Android](https://developers.google.com/android/)
 
@@ -40,10 +41,24 @@ categories: jekyll update
 
 ## 常见问题
 
+### Error checking for billing v3 support. (response: 3:Billing Unavailable)
+- 问题详情
+```
+设定应用内结算时出现问题：Error checking for billing v3 support. (response: 3:Billing Unavailable)
+```
+- 解决方法
+```
+Google账号地区和内购商品销售地区需要一致
+```
+- 通过修改Google Pay付款资料来修改账号国家/地区(https://pay.google.com/payments/u/0/home?bcn=98434150854#settings)
+
+- 参考
+- [更改您的家庭住址或帐单邮寄地址](https://support.google.com/pay/answer/7644076?visit_id=636378051363455754-1016862153&rd=1#)
+- [怎么切换google play 地区?](https://www.zhihu.com/question/21999528)
+
 ### 检查
 ```
 封闭式渠道
-
 
 ```
 
@@ -55,3 +70,4 @@ categories: jekyll update
 
 ## 参考文章
 * [结算时区分测试订单和正式订单-文末尾](http://wiki.midas.qq.com/post/index/2/32/54/0)
+- [个人开发者Google Play上架经验](https://www.jianshu.com/p/0b0664910f41)

@@ -11,3 +11,29 @@ categories: jekyll update
 ```
 Gralde命令注解
 ```
+
+- 文件命名参考
+
+- My系列
+- MyApplication extends Application
+- MyConfig extends ApplicationConfig
+- MyConstant extends ApplicationConstant
+
+- 网络库系列
+
+- SQLite-Room
+- MyDatabase extends RoomDatabase
+- 
+
+
+## 下个阶段
+- 基础
+- 四大组件+SQLite+SP+File+
+
+## 下个阶段
+- androidx 
+- jetpack
+- livedata+room+mvvm+dagger2
+
+## 下个阶段
+- flluter 
