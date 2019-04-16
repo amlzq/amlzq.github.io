@@ -98,7 +98,7 @@ https://andyliwr.github.io/2018/01/10/ps_cutterman/
 ### iOS UI
 
 ### Android UI
-* 表格
+
 | 密度 | 密度值 | 分辨率 |
 | -------------- | -------------- | -------------- |
 | ldpi | 120 | 240x320 |
