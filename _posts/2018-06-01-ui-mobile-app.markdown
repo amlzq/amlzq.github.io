@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title:  "移动APPUI设计规范"
 date:   2018-06-01 00:00 +0800
@@ -101,12 +101,12 @@ https://andyliwr.github.io/2018/01/10/ps_cutterman/
 * 表格
 | 密度 | 密度值 | 分辨率 |
 | -------------- | -------------- | -------------- |
-| ldpi | 120 | 240*320 |
-| mdpi | 160 | 320*480 |
-| hdpi | 240 | 480*800 |
-| xhdpi | 320 | 720*1280 |
-| xxhdpi | 480 | 1080*1920 |
-| xxxhdpi | 960 | 1440*2560 |
+| ldpi | 120 | 240x320 |
+| mdpi | 160 | 320x480 |
+| hdpi | 240 | 480x800 |
+| xhdpi | 320 | 720x1280 |
+| xxhdpi | 480 | 1080x1920 |
+| xxxhdpi | 960 | 1440x2560 |
 
 - android系统字体
 - [安卓系统的默认中文字体](https://www.zhihu.com/question/23487706)
@@ -117,5 +117,4 @@ https://andyliwr.github.io/2018/01/10/ps_cutterman/
 
 - [Android UI 设计规范](https://www.jianshu.com/p/b38e81be51ca)
 - [追随Google的脚步，知乎安卓客户端Material Design实战规范！](http://www.tuyiyi.com/v/40056.html)
-
 

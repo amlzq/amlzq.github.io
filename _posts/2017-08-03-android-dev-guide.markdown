@@ -26,14 +26,25 @@ Gralde命令注解
 - 
 
 
-## 下个阶段
+## 基础阶段
 - 基础
 - 四大组件+SQLite+SP+File+
 
-## 下个阶段
-- androidx 
-- jetpack
-- livedata+room+mvvm+dagger2
+## 当前阶段
+- java+third party components
+- android support
+- android arch
+- MVP
+- RxJava+OkHttp+
 
-## 下个阶段
-- flluter 
+## 新阶段
+拥抱jetpack
+- kotlin+jetpack
+- androidx
+- MVVM
+- livedata+room+dagger2+viewmodel
+
+## 新阶段
+熟悉iOS，熟悉跨平台
+- flluter
+- reactnative
