@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Android模拟器"
-date:   2017-08-03 12:00 +0800
+date:   2017-08-02 12:00 +0800
 categories: jekyll update
 ---
 
