@@ -48,3 +48,14 @@ Gralde命令注解
 熟悉iOS，熟悉跨平台
 - flluter
 - reactnative
+
+## 项目经验
+- 游戏盒子APP
+- 阅读APP
+- 网店APP
+- 应用商店APP
+- 钱包APP
+- 高仿网易云
+- 高仿微信
+- 高仿知乎
+
