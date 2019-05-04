@@ -12,6 +12,8 @@ categories: jekyll update
 Gralde命令注解
 ```
 
+- [安卓开发常用工具和第三方库汇总](https://academy.realm.io/cn/posts/tools-and-libraries-for-common-android-problems/)
+
 - 文件命名参考
 
 - My系列，每个项目必须且唯一的类
@@ -56,5 +58,33 @@ Gralde命令注解
 - 应用商店APP
 - 钱包APP
 - 高仿网易云
-- 高仿微信
 - 高仿知乎
+- 高仿微信
+
+## 目前的帐号体系
+- table user
+```
+用户信息表
+user id(类似QQ号码一样的用户惟一ID，可公开)
+user nickname
+user mobile phone
+user email
+user wechat
+user qq
+user weibo
+user realname
+user idcard
+user 
+```
+`不需要username，password字段`
+
+- table moment
+```
+用户动态表
+
+```
+
+- 业务表
+```
+
+```
