@@ -14,7 +14,7 @@ Gralde命令注解
 
 - 文件命名参考
 
-- My系列
+- My系列，每个项目必须且唯一的类
 - MyApplication extends Application
 - MyConfig extends ApplicationConfig
 - MyConstant extends ApplicationConstant
@@ -58,4 +58,3 @@ Gralde命令注解
 - 高仿网易云
 - 高仿微信
 - 高仿知乎
-
