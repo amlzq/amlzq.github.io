@@ -62,22 +62,6 @@ Gralde命令注解
 - 高仿知乎
 
 ## 目前的帐号体系
-- table user
-```
-用户信息表
-user id(类似QQ号码一样的用户惟一ID，可公开)
-user nickname
-user mobile phone
-user email
-user wechat
-user qq
-user weibo
-user realname
-user idcard
-user 
-```
-`不需要username，password字段`
-
 - table moment
 ```
 用户动态表
@@ -89,3 +73,26 @@ user
 
 ```
 
+### 自定义注解
+
+@ReleaseCheck // 方法/类/字段的发布打包时候检查
+@permission // 方法的注解，需要的权限
+@author // 方法的注解，作者是否原创，来源是连接
+@contribution // 借鉴，参考
+
+### 规范
+- 代码中消灭非英文
+- 混淆，加固，瘦身
+- 渠道包
+
+- ids
+```
+tv_
+iv_
+```
+
+- 单词简写
+```
+description desc
+
+```

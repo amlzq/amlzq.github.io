@@ -6,4 +6,3 @@ categories: jekyll update
 ---
 
 - [](https://google.github.io/android-gradle-dsl/current/com.android.build.gradle.internal.dsl.NdkOptions.html)
-
