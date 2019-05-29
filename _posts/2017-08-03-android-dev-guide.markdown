@@ -16,7 +16,7 @@ Gralde命令注解
 
 - 文件命名参考
 
-- My系列
+- My系列，每个项目必须且唯一的类
 - MyApplication extends Application
 - MyConfig extends ApplicationConfig
 - MyConstant extends ApplicationConstant
@@ -58,8 +58,8 @@ Gralde命令注解
 - 应用商店APP
 - 钱包APP
 - 高仿网易云
-- 高仿微信
 - 高仿知乎
+- 高仿微信
 
 ## 目前的帐号体系
 - table moment
@@ -96,3 +96,5 @@ iv_
 description desc
 
 ```
+
+`不要随意改类的命名`
