@@ -19,3 +19,7 @@ multipart/form-data
 application/json
 text/xml
 ```
+
+### 移动端统一Content-Type
+- [iOS AFNetworking用JSON类型数据作为请求body发送POST请求](https://www.jianshu.com/p/0570837fcd79)
+- []
