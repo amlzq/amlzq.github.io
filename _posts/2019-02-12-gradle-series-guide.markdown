@@ -10,6 +10,42 @@ categories: jekyll update
 
 ### Android Studio Gradle
 
+
+
+- 配置签名
+	```
+		// 测试证书举例：
+		signingConfigs {
+	        release {
+	            keyAlias 'androiddebugkey'
+	            keyPassword 'android'
+	            storeFile file("C:/Users/${USER}/.android/debug.keystore")
+	            storePassword 'android'
+	            v1SigningEnabled true
+	            v2SigningEnabled false
+	        }
+	        debug {
+	            keyAlias 'androiddebugkey'
+	            keyPassword 'android'
+	            storeFile file("C:/Users/${USER}/.android/debug.keystore")
+	            storePassword 'android'
+	            v1SigningEnabled true
+	            v2SigningEnabled false
+	        }
+	    }
+	    ...
+	    buildTypes {
+	        debug {
+	        	...
+	            signingConfig signingConfigs.debug
+	        }
+	        release {
+	            ...
+	            signingConfig signingConfigs.release
+	        }
+    	}
+	```
+
 ### 实践
 - 
 - 
