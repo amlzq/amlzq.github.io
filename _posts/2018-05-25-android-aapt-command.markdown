@@ -35,3 +35,31 @@ bash clearAppData.sh com.droidyue.akoi
 * [Authenticating Your Client][Authenticating_Your_Client]
 
 [Authenticating_Your_Client]: https://developers.google.com/android/guides/client-auth?hl=zh-cn
+
+- 批量获取包名信息
+- [https://www.jianshu.com/p/da0aee670ec7](https://www.jianshu.com/p/da0aee670ec7)
+```
+chcp 65001
+REM  Copyrights: youngpen
+REM  version:1.0
+title 批量提取apk包名和应用名
+rem 获取所有apk文件，使用aapt获得apk信息所在行
+for /f "delims=" %%a in ('dir /b *.apk') do (
+echo %%a >>temp_info.txt
+aapt dump badging %%a |find "application-label:" >>temp_info.txt
+aapt dump badging %%a |find "package:"  >>temp_info.txt
+)
+rem 将apk安装后的应用名和包名单独打印
+for /f "tokens=2 delims='" %%i in ('find /i ":" temp_info.txt') do (
+echo %%i >>result.txt
+)
+rem 删除临时文件
+del temp_info.txt
+echo 任务完成，点击任意键退出
+exit
+```
+
+- [获取apk应用所有详细信息，python实现](https://github.com/poorevil/GetAPKDetails)
+```
+
+```

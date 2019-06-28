@@ -98,3 +98,6 @@ description desc
 ```
 
 `不要随意改类的命名`
+
+
+- [Android性能优化全面攻略](https://juejin.im/post/5d084ddae51d455d877e0d2f)
