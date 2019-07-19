@@ -101,3 +101,10 @@ description desc
 
 
 - [Android性能优化全面攻略](https://juejin.im/post/5d084ddae51d455d877e0d2f)
+
+- [「个性签名」用英语怎么表达？](https://www.zhihu.com/question/20346136)
+
+- [程序代码中，怎么区分status和state？](https://www.zhihu.com/question/21994784)
+    ```
+    state表示一个确定的状态集中的某个状态（比如水的三态），status表示一种笼统的情形（比如你的生活状态、工作状态），不存在确定的状态集。
+    ```
